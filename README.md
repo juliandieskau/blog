@@ -11,6 +11,10 @@ Check if everything is running:
 ```cmd
 docker ps
 ```
+### Open website
+In Browser, open `localhost:8080` to open the homepage.
+
+## Debug website
 ### Use mysql console
 Open bash as an interactive terminal inside the running mysql container
 ```cmd
