@@ -1,0 +1,128 @@
+body {
+  /* Use a background image for the body element instead of a simple color. */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  /* background-color: #burlywood; */
+
+  /* Change default font to a different one, each browser has some common fonts available. */
+  font-family: sans-serif;
+  /* Space between the elements and the inside border of the body element */
+  padding: 20px; 
+}
+
+/* Browsers have default values for the typography of heading elements, change their size: */
+h1 {
+  /* Browsers have default top margins, that are non-zero and can destroy symmetry */
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Include all styles without <style> elements in a separate document to keep things clean. */
+h1, h2, p {
+  text-align: center;
+}
+
+/* It's boring to only have the same font for every element, so change it for headers: */
+h1, h2 {
+  /* Add a fallback font when the first one is not found, separated by a comma: */
+  font-family: Impact, serif;
+}
+
+/* Default for hr dividers is a thin grey line, change the appearance: */
+hr {
+  /* Default border-height is 1px, so the height is only representing the background of the hr line */
+  height: 2px;
+  background-color: brown;
+  /* Make the unfitting light border the same color as the background */
+  border-color: brown;
+}
+
+/* Images behave "like" inline-elements, so they need to be manually centered: */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Decrease the distance between the image and the element above by "pulling up" the image with a negative top margin */
+  margin-top: -25px;
+}
+
+/* Use the id selector # to target a specific element with an id attribute. */ 
+/* Use the class selector . to target elements with the same class */
+.menu {
+  /* % is in relation to the parent element */
+  width: 80%;
+  /* Prevent the menu from being too far apart on wide monitors */
+  max-width: 500px;
+  /* Use margin auto to center the menu element to towards the parent */
+  margin-left: auto;
+  margin-right: auto;
+  /* Use padding to space the content of the menu element inwards. */
+  /*padding-left: 20px;*/
+  padding: 20px; /* Same space for all 4 sides. */
+  background-color: burlywood;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  /* Change the size of the element in which the items should be aligned left */
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  /* Change the size of the element in which the items should be aligned right */
+  width: 25%;
+}
+
+/* Selector for p elements that are children of the specific item-class elements */
+.item p {
+  /* Change block-level elements to behave like inline elements */
+  /* inline-block elements only take up the width of their own content */
+  display: inline-block;
+  /* Decrease the distance between menu items by setting a small margin */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.established {
+  font-style: italic;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+}
+
+/* Decrease default bottom margin to 5px for the address paragraph */
+.address {
+  margin-bottom: 5px;
+}
+
+/* Make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element */
+a {
+  color: black;
+}
+
+/* Use a pseudo-selector for the a element if it has been visited to change its color too */
+a:visited {
+  color: black;
+}
+
+/* Change the color for hovering with the mouse over it. */
+a:hover {
+  color: brown;
+}
+
+/* Change the color for when the link is actively clicked. */
+a:active {
+  color: brown;
+}

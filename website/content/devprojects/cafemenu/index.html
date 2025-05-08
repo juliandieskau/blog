@@ -1,0 +1,83 @@
+<!-- 2: This project is part of the freeCodeCamp Responsive Web Design Course, although completely typed and commented by myself: 
+    https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cafe Menu</title>
+    <meta charset="utf-8">
+
+    <!-- Make styling look similar on mobile and desktop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Gain control over the appearance of the document -->
+    <!-- Set properties within style for html elements over the style selector <element>{property:value;} -->
+    <!-- Create a list of style selectors if they have the same properties -->
+    <!--style>
+      h1, h2, p {
+        text-align: center;
+      }
+    </style-->
+
+    <!-- Reference an external stylesheet with the void element link -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Div used for design layout purposes, unlike other content elements -->
+    <!-- Use class attributes to assign the same style to multiple elements -->
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2025</p>
+
+        <!-- Display a divider between different parts of content: -->
+        <hr>
+        <section>
+          <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+          <!-- Article elements usually contain multiple elements with related information. -->
+          <!-- Style article class so that it's content is handled more like inline elements -->
+          <article class="item">
+            <!-- p elements are block-level elements, so they take up the entire width of their parent element -->
+            <!-- Styling as inline-block and placing elements on different lines creates an extra space to the right of the first p element, causing the second to move to the next line -->
+            <!-- => Place inline-block elements on the same line if they should appear on the same line, with no space in between! -->
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <hr class="bottom-line">
+      <footer>
+        <p><a href="https://www.freecodecamp.org" target="_blank">Visit our website</a></p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+  </body>
+</html>
