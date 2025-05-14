@@ -1,5 +1,5 @@
 # Blog
-Personal blog
+Personal blog ("Gruppe" 7)
 
 ## Set up website
 ### Start webserver
