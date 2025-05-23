@@ -3,6 +3,7 @@ $lang = [
     // Global
     "title" => "Julian's Blog",
     "language" => "Language",
+    "unavailable" => "This page is currently unavailable.",
 
     // Navigation
     "nav_home" => "Home",

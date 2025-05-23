@@ -3,10 +3,11 @@ $lang = [
     // Global
     "title" => "Julian's Blog",
     "language" => "Sprache",
+    "unavailable" => "Diese Seite ist aktuell nicht verfügbar.",
 
     // Navigation
     "nav_home" => "Startseite",
-    "nav_about" => "Über uns",
+    "nav_about" => "Über mich",
     "nav_contact" => "Kontakt",
 
     // Home page

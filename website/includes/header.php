@@ -13,15 +13,20 @@
                 <!-- Dropdown to select language -->
                 <form method="get" id="langForm">
                     <label for="lang"><?= $lang['language'] ?>:</label>
+                    <!-- Form submits the selected language through GET as URL parameters -->
                     <select name="lang" id="lang" onchange="this.form.submit()">
                         <option value="en" <?= $lang_code == 'en' ? 'selected' : '' ?>>English</option>
                         <option value="de" <?= $lang_code == 'de' ? 'selected' : '' ?>>Deutsch</option>
                     </select>
 
                     <?php
-                    // Preserve other query params when changing language
+                    // Preserve other query params when changing language 
+                    // by going through all query parameters in URL
                     foreach ($_GET as $key => $value) {
+                        // Don't duplicate the lang that gets submitted already
                         if ($key !== 'lang') {
+                            // Reconstruct query params to hidden inputs.
+                            // When form gets submitted these inputs get submitted too, so they are preserved
                             echo "<input type='hidden' name='" . htmlspecialchars($key) . "' value='" . htmlspecialchars($value) . "'>";
                         }
                     }

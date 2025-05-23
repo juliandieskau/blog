@@ -67,6 +67,6 @@ main {
     }
 
     form#langForm {
-        margin-top: 10px;
+        margin-top: 0;
     }
 }
