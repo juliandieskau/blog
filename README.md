@@ -48,3 +48,21 @@ exit container interactive terminal
 ```bash
 exit
 ```
+
+## TODO
+- Content:
+  - Add categories to header (remove Contact)
+  - Add category-pages that list blog posts in their category (and preview?)
+  - Add Blog posts:
+    - iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
+    - copy instagram posts (and translate) in parts into lang files and with images inserted in between
+- Sub menu below header, that opens on hovering over categories with sub pages
+- Display flag to the side of language
+- Database that stores comments
+  - Form section in php-File that can be included under Blog Posts for users to 
+    - post comments
+    - show posted comments
+Maybe:
+- Database that counts amount of visitors
+- Make sure no XSS/SQL-Attacks are possible in Forms
+- Search bar

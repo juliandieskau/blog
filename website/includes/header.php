@@ -1,8 +1,12 @@
+<!-- HEADER SECTION TO BE INCLUDED ON EVERY PAGE BELOW HEAD SECTION AND ABOVE PAGE CONTENT -->
+
+<!-- Head is specified in head.php, in between each sub page can add additional head elements -->
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1><?= $lang['title'] ?></h1>
+            <!-- Title at the top of page, links to Home-Page -->
+            <h1><a href="index.php"><?= $lang['title'] ?></a></h1>
             <div class="navbar">
                 <!-- Navigation Bar -->
                 <nav>
@@ -35,3 +39,5 @@
             </div>
         </header>
         <main>
+        <!-- Start content below in different files -->
+        <!-- Closing tags are in footer.php -->
