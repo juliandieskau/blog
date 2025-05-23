@@ -1,11 +1,11 @@
 services:
   web:
-    image: httpd:latest
+    image: php:8.3.21-apache
     container_name: blog_apache
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
-      - ./website:/usr/local/apache2/htdocs/
+      - ./website:/var/www/html
     depends_on:
       - db
 

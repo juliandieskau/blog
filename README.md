@@ -1,18 +1,29 @@
 # Blog
 Personal blog ("Gruppe" 7)
 
+## Add new pages
+Copy ./template.php to use as a template for all pages.
+
 ## Set up website
 ### Start webserver
 In project root, to start apache webserver and mysql database in blog_default docker-network:
 ```cmd
 docker compose up -d
 ```
+Or, if docker config/image is changed:
+```cmd
+docker compose up --build
+```
 Check if everything is running:
 ```cmd
 docker ps
 ```
 ### Open website
-In Browser, open `localhost:8080` to open the homepage.
+In Browser, open `localhost:80` to open the homepage.
+### Stop webserver
+```cmd
+docker compose down
+```
 
 ## Debug website
 ### Use mysql console
