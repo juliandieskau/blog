@@ -7,8 +7,10 @@ $lang = [
 
     // Navigation
     "nav_home" => "Home",
-    "nav_about" => "About",
-    "nav_contact" => "Contact",
+    "nav_about" => "Profile",
+    "nav_projects" => "Projects",
+    "nav_travel" => "Travel",
+    "nav_food" => "Food",
 
     // Home page
     "home_heading" => "Welcome!",
@@ -18,7 +20,15 @@ $lang = [
     "about_heading" => "About Me",
     "about_text" => "Hey, I'm Julian and I'm currently studying applied computer science.",
 
-    // Contact page
-    "contact_heading" => "Contact me",
-    "contact_text" => "thisistotallymyemail@address.com",
+    // Projects page
+    "projects_heading" => "Projects",
+    "projects_text" => "Here you can find all my projects in one place.",
+
+    // Travel page
+    "travel_heading" => "Travel",
+    "travel_text" => "Here you can find blog posts of my travel highlights.",
+
+    // Food page
+    "food_heading" => "Food",
+    "food_text" => "Here you can find recipes and other delicacies.",
 ];

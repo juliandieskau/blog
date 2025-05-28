@@ -50,19 +50,31 @@ exit
 ```
 
 ## TODO
-- Content:
-  - Add categories to header (remove Contact)
-  - Add category-pages that list blog posts in their category (and preview?)
-  - Add Blog posts:
-    - iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
-    - copy instagram posts (and translate) in parts into lang files and with images inserted in between
-- Sub menu below header, that opens on hovering over categories with sub pages
-- Display flag to the side of language
-- Database that stores comments
-  - Form section in php-File that can be included under Blog Posts for users to 
-    - post comments
-    - show posted comments
+- [] Add Content:
+  - [x] Add categories to header (remove Contact)
+  - [] Add Blog posts:
+    - [] Projects:
+      - [] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
+    - [] Travel:
+      - [] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
+    - [] Food:
+      - [] Matcha Anleitung
+      - [] Rezepte mit Bildern, die ich recently gemacht habe
+    - [] About page: Japan side profile and text what i do
+    - [] Home page: Short description of me (link to profile)
+  - [] Add category-pages that list blog posts in their category (and preview?)
+- [] Database that stores comments
+  - [] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
+    - [] Post comments
+    - [] Show posted comments
+- [] Footer: Display Icons with links to socials / github
+- [] DOKUMENTATION
+- [] 22.06. Abgabe allerspätestens
 Maybe:
-- Database that counts amount of visitors
-- Make sure no XSS/SQL-Attacks are possible in Forms
-- Search bar
+- [] Finish Design/Layout of website
+- [] Display localhost/ as localhost/index.php
+- [] Sub menu below header, that opens on hovering over categories with sub pages
+- [] Database that counts amount of visitors
+- [] Make sure no XSS/SQL-Attacks are possible in Forms
+- [] Search bar
+- [] Icon for Title

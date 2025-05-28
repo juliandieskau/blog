@@ -12,7 +12,9 @@
                 <nav>
                     <a href="index.php"><?= $lang['nav_home'] ?></a>
                     <a href="about.php"><?= $lang['nav_about'] ?></a>
-                    <a href="contact.php"><?= $lang['nav_contact'] ?></a>
+                    <a href="projects.php"><?= $lang['nav_projects'] ?></a>
+                    <a href="travel.php"><?= $lang['nav_travel'] ?></a>
+                    <a href="food.php"><?= $lang['nav_food'] ?></a>
                 </nav>
                 <!-- Dropdown to select language -->
                 <form method="get" id="langForm">
