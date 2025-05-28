@@ -14,5 +14,24 @@
 <h2><?= $lang['<site>_heading'] ?></h2>
 <p><?= $lang['<site>_text'] ?></p>
 
+<!-- Iframe to show html projects -->
+<div class="responsive-iframe-container">
+    <iframe src="index.html" class="auto-resize"></iframe>
+    <!-- Make sure to include css for html, body inside iframe -->
+</div>
+
+<!-- Show source code of the project -->
+<?php
+// Define the relative/absolute path where the files are located
+$base_path = __DIR__; 
+// Define an associative array with keys as filenames to show and their values as the language used for syntax highlighting
+$source_files = [
+    'index.html' => 'markup',
+    'styles.css' => 'css'
+];
+// Display the code viewer
+include RPATH . '/assets/code-viewer.php';
+?>
+
 <!-- Closing tags get included below -->
 <?php include(RPATH . 'includes/footer.php'); ?>

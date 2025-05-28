@@ -36,5 +36,8 @@ $lang = [
     // PROJECTS
     // Cafemenu
     "cafemenu_heading" => "Cafe-Menü",
-    "cafemenu_text" => "freeCodeCamp.org-Projekt um HTML und CSS. Ich habe die Übung hier nachgemacht und Kommentare ergänzt, um zu erklären, wie alles funktioniert.",
+    "cafemenu_text" => "freeCodeCamp.org-Projekt um HTML und CSS. Ich habe die Übung hier nachgemacht und Kommentare ergänzt, um zu erklären, wie alles funktioniert. Das Projekt beinhaltet ein index.html und ein styles.css, die ein einseitiges Dokument erstellen, das die Speisen und Getränke des erfundenen Cafe's in einem Menü präsentieren.",
+    "cafemenu_files" => "Der Quellcode des Menüs ist hier zu sehen:",
+
+
 ];

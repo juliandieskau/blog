@@ -1,0 +1,41 @@
+.code-tabs {
+  margin-top: 2rem;
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+}
+.code-tabs nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.code-tabs nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.code-tabs nav button.active {
+  background-color: #444;
+  border-radius: 4px;
+}
+.code-tabs .tab-content {
+  display: none;
+}
+.code-tabs .tab-content.active {
+  display: block;
+}
+pre {
+  white-space: pre;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 1rem;
+  background: transparent;
+  overflow-x: auto;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}

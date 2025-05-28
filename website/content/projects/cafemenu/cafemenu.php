@@ -12,9 +12,26 @@
 <!-- This is inside the <main>-tag, use lang files to store text and include like below: -->
 <h2><?= $lang['cafemenu_heading'] ?></h2>
 <p><?= $lang['cafemenu_text'] ?></p>
+
+<!-- Iframe for the "camper cafe menu" -->
 <div class="responsive-iframe-container">
-    <iframe src="index.html" class="auto-resize"></iframe>
+  <iframe src="index.html" class="auto-resize"></iframe>
 </div>
+
+<p><?= $lang['cafemenu_files'] ?></p>
+
+<!-- Show source code of the project -->
+<?php
+// Define the relative/absolute path where the files are located
+$base_path = __DIR__; 
+// Define an associative array with keys as filenames to show and their values as the language used for syntax highlighting
+$source_files = [
+  'index.html' => 'markup',
+  'styles.css' => 'css'
+];
+// Display the code viewer
+include RPATH . '/assets/code-viewer/code-viewer.php';
+?>
 
 <!-- Closing tags get included below -->
 <?php include(RPATH . '/includes/footer.php'); ?>

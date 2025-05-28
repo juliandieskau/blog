@@ -36,5 +36,9 @@ $lang = [
     // PROJECTS
     // Cafemenu
     "cafemenu_heading" => "Cafe menu",
-    "cafemenu_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works.",
+    "cafemenu_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works. The project includes a index.html and a styles.css that create a one-page document displaying the fictional cafe's menu items.",
+    "cafemenu_files" => "The source code to the menu above can be found below:",
+
+
+
 ];
