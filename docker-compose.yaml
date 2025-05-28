@@ -1,6 +1,6 @@
 services:
   web:
-    image: php:8.3.21-apache
+    build: .
     container_name: blog_apache
     ports:
       - "80:80"

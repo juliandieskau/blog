@@ -6,15 +6,15 @@
     <div class="wrapper">
         <header>
             <!-- Title at the top of page, links to Home-Page -->
-            <h1><a href="index.php"><?= $lang['title'] ?></a></h1>
+            <h1><a href="/index.php"><?= $lang['title'] ?></a></h1>
             <div class="navbar">
                 <!-- Navigation Bar -->
                 <nav>
-                    <a href="index.php"><?= $lang['nav_home'] ?></a>
-                    <a href="about.php"><?= $lang['nav_about'] ?></a>
-                    <a href="projects.php"><?= $lang['nav_projects'] ?></a>
-                    <a href="travel.php"><?= $lang['nav_travel'] ?></a>
-                    <a href="food.php"><?= $lang['nav_food'] ?></a>
+                    <a href="/index.php"><?= $lang['nav_home'] ?></a>
+                    <a href="/about.php"><?= $lang['nav_about'] ?></a>
+                    <a href="/projects.php"><?= $lang['nav_projects'] ?></a>
+                    <a href="/travel.php"><?= $lang['nav_travel'] ?></a>
+                    <a href="/food.php"><?= $lang['nav_food'] ?></a>
                 </nav>
                 <!-- Dropdown to select language -->
                 <form method="get" id="langForm">

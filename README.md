@@ -10,7 +10,7 @@ In project root, to start apache webserver and mysql database in blog_default do
 ```cmd
 docker compose up -d
 ```
-Or, if docker config/image is changed:
+Or, if docker config/image is changed or starting for the first time:
 ```cmd
 docker compose up --build
 ```
@@ -54,7 +54,7 @@ exit
   - [x] Add categories to header (remove Contact)
   - [] Add Blog posts:
     - [] Projects:
-      - [] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
+      - [1] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
     - [] Travel:
       - [] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
     - [] Food:

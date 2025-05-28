@@ -2,9 +2,10 @@
 html, body {
     font-family: Arial, sans-serif;
     height: 100%;
-    margin: 0 auto; /* Center page horizontalle */
+    margin: 0 auto; /* Center page horizontally */
     padding: 0;
-    max-width: 1080px; /* Too wide of a page destroys the layout */
+    max-width: 1420px; /* Too wide of a page destroys the layout */
+    background-color: #2d2d2d;
 }
 
 /* Wrapper around body elements with full viewport height to push footer down */
@@ -16,7 +17,7 @@ html, body {
 
 /* header and footer in body but outside of main */
 header, footer {
-    background: #333;
+    background: #2d2d2d;
     color: white;
     padding: 1em;
     font-size: 16px;
@@ -63,6 +64,7 @@ form#langForm select {
 main {
     flex: 1;
     padding: 2em;
+    background-color: white;
 }
 
 /* For screens 600px wide or smaller */
@@ -78,6 +80,28 @@ main {
     form#langForm {
         margin-top: 0;
     }
+}
+
+/* Make Scrollbars prettier */
+/* On Webkit (Chrome, Safari, Edge): */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+/* On Firefox: */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #2d2d2d;
 }
 
 /* PROJECTS */
@@ -97,4 +121,5 @@ iframe.auto-resize {
     display: block;
     height: auto;
     min-height: 500px;
+    overflow: hidden;
 }
