@@ -71,7 +71,8 @@ exit
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
 Maybe:
-- [] Finish Design/Layout of website
+- [] Finish Design/Layout of website:
+  - [] Header untereinander und einklappen mit Hamburger Menu wenn screen nicht breit genug
 - [] Display localhost/ as localhost/index.php
 - [] Sub menu below header, that opens on hovering over categories with sub pages
 - [] Database that counts amount of visitors

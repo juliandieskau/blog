@@ -78,3 +78,22 @@ main {
         margin-top: 0;
     }
 }
+
+/* PROJECTS */
+/* Container (like div) where a auto-resized iframe is inside. */
+.responsive-iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 2px solid #333;
+}
+
+/* Iframe that gets automatically resized to fit the iframes whole height. */
+iframe.auto-resize {
+    width: 100%;
+    border: none;
+    display: block;
+    height: auto;
+    min-height: 200px;
+}

@@ -1,5 +1,12 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Define root path of website as variable (var/www/html/)
+if (!defined('RPATH')) {
+    define('RPATH', $_SERVER['DOCUMENT_ROOT']);
+}
 
 // Determine selected language from user via GET
 if (isset($_GET['lang'])) {

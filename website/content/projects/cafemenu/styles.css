@@ -1,3 +1,10 @@
+/* Insert if the scrollbar appears */
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+} */
+
 body {
   /* Use a background image for the body element instead of a simple color. */
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);

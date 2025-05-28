@@ -12,6 +12,7 @@ $lang = [
     "nav_travel" => "Travel",
     "nav_food" => "Food",
 
+    // CATEGORIES
     // Home page
     "home_heading" => "Welcome!",
     "home_text" => "This is the homepage.",
@@ -31,4 +32,9 @@ $lang = [
     // Food page
     "food_heading" => "Food",
     "food_text" => "Here you can find recipes and other delicacies.",
+
+    // PROJECTS
+    // Cafemenu
+    "cafemenu_heading" => "Cafe menu",
+    "cafemenu_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works.",
 ];
