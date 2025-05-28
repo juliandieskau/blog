@@ -12,6 +12,9 @@ $lang = [
     "nav_travel" => "Travel",
     "nav_food" => "Food",
 
+    // Footer
+    "footer_copyright" => " Julian's Blog. All rights reserved.",
+
     // CATEGORIES
     // Home page
     "home_heading" => "Welcome!",

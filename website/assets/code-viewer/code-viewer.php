@@ -35,7 +35,7 @@ if (!isset($base_path) || !isset($source_files) || !is_array($source_files)) {
 <div class="code-tabs">
     <!-- Add buttons for each tab to switch to it -->
     <nav>
-        <?php foreach ($source_files as $filename => $lang): ?>
+        <?php foreach ($source_files as $filename => $code_lang): ?>
             <button onclick="switchTab('<?= md5($filename) ?>')" id="tab-<?= md5($filename) ?>">
                 <?= htmlspecialchars($filename) ?>
             </button>
@@ -44,7 +44,7 @@ if (!isset($base_path) || !isset($source_files) || !is_array($source_files)) {
     <!-- Display every source file inside their tab -->
     <!-- pre, code: Wrapper for Prism.js to style the code, DO NOT INDENT THAT LINE!-->
     <!-- Display file contents by escaping with htmlspecialchars() to display file contents safely -->
-<?php foreach ($source_files as $filename => $lang): ?>
+<?php foreach ($source_files as $filename => $code_lang): ?>
     <?php
     $filepath = rtrim($base_path, '/') . '/' . $filename;
     $code = file_exists($filepath)
@@ -52,7 +52,7 @@ if (!isset($base_path) || !isset($source_files) || !is_array($source_files)) {
         : "// File not found: $filename";
     ?>
     <div class="tab-content" id="content-<?= md5($filename) ?>">
-<pre><code class="language-<?= htmlspecialchars($lang) ?>"><?= htmlentities($code) ?></code></pre>
+<pre><code class="language-<?= htmlspecialchars($code_lang) ?>"><?= htmlentities($code) ?></code></pre>
     </div>
 <?php endforeach; ?>
 </div>

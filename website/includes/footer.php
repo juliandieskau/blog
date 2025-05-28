@@ -2,7 +2,7 @@
 
         </main>
         <footer>
-            <p>&copy; <?= date("Y") ?> My Website. All rights reserved.</p>
+            <p>&copy; <?= date("Y") ?><?= $lang['footer_copyright'] ?></p>
         </footer>
     </div>
 </body>

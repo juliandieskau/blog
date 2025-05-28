@@ -12,6 +12,9 @@ $lang = [
     "nav_travel" => "Reisen",
     "nav_food" => "Essen",
 
+    // Footer
+    "footer_copyright" => " Julian's Blog. Alle Rechte vorbehalten.",
+
     // CATEGORIES
     // Home page
     "home_heading" => "Willkommen!",

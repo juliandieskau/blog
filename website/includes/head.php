@@ -5,6 +5,7 @@
 <html lang="<?= htmlspecialchars($lang_code) ?>">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Set page title according to sub-page, if it set it's own title -->
     <title><?= isset($page_title) ? $page_title . ' - ' . $lang['title'] : $lang['title'] ?></title>
     <!-- Include CSS Rules and make browser reload file, if it changed (add last changed time as version to filename) -->
