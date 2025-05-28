@@ -2,7 +2,7 @@
 Personal blog ("Gruppe" 7)
 
 ## Add new pages
-Copy ./template.php to use as a template for all pages.
+Copy ./template.php to use as a template for all pages. EVERY name of a .php file has to be UNIQUE to ALL other .php blog files and only be made of alphanumerics and underscores!
 
 ## Set up website
 ### Start webserver
@@ -67,6 +67,8 @@ exit
   - [] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
     - [] Post comments
     - [] Show posted comments
+    - [] Delete comments (report voting)
+    - [] Like/Dislike buttons
 - [] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
