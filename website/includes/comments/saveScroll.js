@@ -14,8 +14,10 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting && allowScrollSave) {
-          currentFocusedId = entry.target.id;
-          if (currentFocusedId) {
+          const id = entry.target.id;
+          // exclude the hidden username field from being saved
+          if (id && !id.toLowerCase().includes("username")) {
+            currentFocusedId = id;
             localStorage.setItem(key, currentFocusedId);
           }
         }
@@ -40,8 +42,18 @@
     // Save element id when submitting a form
     document.querySelectorAll("form").forEach(form => {
       form.addEventListener("submit", () => {
-        const id = form.id || form.closest("[id]")?.id || currentFocusedId;
-        if (id) {
+        const candidates = [
+          form.id,
+          form.closest("[id]")?.id,
+          currentFocusedId
+        ];
+        
+        // Prevent username modal from being chosen (because it gets hidden after submitting)
+        // Skip saving if ID includes "username"
+        const validId = candidates.find(id => id && !id.toLowerCase().includes("username"));
+
+        // save id if found
+        if (validId) {
           localStorage.setItem(key, id);
         }
       });
@@ -57,16 +69,21 @@
       history.replaceState(null, "", window.location.pathname);
     });
 
-    // Restore scroll to focused element and update URL
+    // Restore scroll to focused element, cleanup and update URL
     const savedId = localStorage.getItem(key);
-    if (savedId) {
+    // Only scroll to valid URLs
+    if (savedId && !savedId.toLowerCase().includes("username")) {
       const target = document.getElementById(savedId);
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "auto", block: "start" });
           history.replaceState(null, "", "#" + savedId);
         }, 50);
+      } else {
+        localStorage.removeItem(key); // Clean up stale id
       }
+    } else {
+      localStorage.removeItem(key); // Remove invalid id
     }
   });
 })();
