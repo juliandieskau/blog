@@ -34,7 +34,7 @@ include RPATH . '/assets/code-viewer/code-viewer.php';
 ?>
 
 <!-- Show comment section -->
-<?php include(RPATH . '/includes/comments.php'); ?>
+<?php include(RPATH . '/includes/comments/comments.php'); ?>
 
 <!-- Closing tags get included below -->
 <?php include(RPATH . '/includes/footer.php'); ?>
