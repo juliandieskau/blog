@@ -35,14 +35,35 @@ if ($conn->query($sql)) {
 
 <!-- Show form to submit new comment (insert into table, and give the table_name to select the table to insert into) -->
 <form id="comment_form" action="/includes/comments/database.php" method="POST">
+  <!-- Transmit the SQL action and the table to use -->
   <input type="hidden" name="action" value="insert">
   <input type="hidden" name="table" value="<?= htmlspecialchars($table_name) ?>">
-  
-  <label for="username">Username: <input id="username" type="text" name="username" required></label>
-  <label for="comment">Comment: <textarea id="comment" name="comment" required></textarea></label>
+
+  <!-- Transmit the username -->
+  <input type="hidden" id="username" name="username" required>
+
+  <label for="comment">
+    Comment: 
+    <textarea id="comment" name="comment" maxlength="2000" required></textarea>
+    <!-- Count the number of characters entered: -->
+    <small id="comment-counter">0 / 2000</small>
+  </label>
   
   <button type="submit">Submit</button>
 </form>
+
+<!-- Prompt for username on form submit if not saved locally -->
+<div id="username-modal">
+  <div id="username-prompt">
+    <h2>Enter your username</h2>
+    <input type="text" id="username-input" maxlength="30" placeholder="Max. 30 characters">
+    <div id="username-buttons">
+      <button id="username-cancel">Cancel</button>
+      <button id="username-save">Save</button>
+    </div>
+  </div>
+</div>
+<script src="/includes/comments/username.js"></script>
 
 <!-- TODO: Show posted comments (save their corresponding ID from the DB)-->
 <?php
