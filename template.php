@@ -11,8 +11,9 @@
 <?php include(RPATH . 'includes/header.php'); ?>
 
 <!-- This is inside the <main>-tag, use lang files to store text and include like below: -->
-<h2><?= $lang['<site>_heading'] ?></h2>
-<p><?= $lang['<site>_text'] ?></p>
+<!-- Assign ids to most elements, so they can be linked to -->
+<h2 id="content_heading"><?= $lang['<site>_heading'] ?></h2>
+<p id="content_description"><?= $lang['<site>_text'] ?></p>
 
 <!-- Closing tags get included below -->
 <?php include(RPATH . 'includes/footer.php'); ?>

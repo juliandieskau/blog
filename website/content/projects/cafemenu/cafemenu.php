@@ -10,11 +10,11 @@
 <?php include(RPATH . '/includes/header.php'); ?>
 
 <!-- This is inside the <main>-tag, use lang files to store text and include like below: -->
-<h2><?= $lang['cafemenu_heading'] ?></h2>
-<p><?= $lang['cafemenu_text'] ?></p>
+<h2 id="content_heading"><?= $lang['cafemenu_heading'] ?></h2>
+<p id="content_description"><?= $lang['cafemenu_text'] ?></p>
 
 <!-- Iframe for the "camper cafe menu" -->
-<div class="responsive-iframe-container">
+<div id="project_iframe" class="responsive-iframe-container">
   <iframe src="index.html" class="auto-resize"></iframe>
 </div>
 

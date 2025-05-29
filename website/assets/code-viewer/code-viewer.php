@@ -32,7 +32,7 @@ if (!isset($base_path) || !isset($source_files) || !is_array($source_files)) {
 <link href="/assets/code-viewer/tab-switcher.css" rel="stylesheet" />
 
 <!-- HTML to display Tabs -->
-<div class="code-tabs">
+<div id="code-viewer" class="code-tabs">
     <!-- Add buttons for each tab to switch to it -->
     <nav>
         <?php foreach ($source_files as $filename => $code_lang): ?>

@@ -11,11 +11,12 @@
 <?php include(RPATH . 'includes/header.php'); ?>
 
 <!-- This is inside the <main>-tag, use lang files to store text and include like below: -->
-<h2><?= $lang['<site>_heading'] ?></h2>
-<p><?= $lang['<site>_text'] ?></p>
+<!-- Assign ids to most elements, so they can be linked to -->
+<h2 id="content_heading"><?= $lang['<site>_heading'] ?></h2>
+<p id="content_description"><?= $lang['<site>_text'] ?></p>
 
 <!-- Iframe to show html projects -->
-<div class="responsive-iframe-container">
+<div id="project_iframe" class="responsive-iframe-container">
     <iframe src="index.html" class="auto-resize"></iframe>
     <!-- Make sure to include css for html, body inside iframe -->
 </div>

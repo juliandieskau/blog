@@ -10,6 +10,7 @@
     <title><?= isset($page_title) ? $page_title . ' - ' . $lang['title'] : $lang['title'] ?></title>
     <!-- Include CSS Rules and make browser reload file, if it changed (add last changed time as version to filename) -->
     <link rel="stylesheet" href="/assets/styles.css?v=<?= filemtime(RPATH . '/assets/styles.css') ?>">
-    <!-- script src="/assets/script.js" defer></script -->
+    <!-- Save the scroll position before navigation or form submission -->
+    <script src="/includes/comments/saveScroll.js"></script>
 
     <!-- Pages can add own head-tags below -->

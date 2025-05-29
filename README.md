@@ -84,9 +84,13 @@ exit
   - [x] Create a table for comments every time you enter a blog page that needs it and doesn't have its own table yet
   - [] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
     - [x] Post comments
-    - [] Show posted comments
-    - [] Delete comments (report voting)
-    - [] Like/Dislike buttons
+    - [] Username prompt only once and save username, then use stored username for POST
+    - [] Show posted comments with buttons for every comment:
+      - [] Delete comments (report voting, 3 reports -> deletes comment)
+      - [] Like/Dislike buttons
+    - [] Sort comments by likes
+    - [] Add texts to language files
+    - [x] Redirect to page at the correct scroll point
   - [] Style comments section to look good
 - [] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION

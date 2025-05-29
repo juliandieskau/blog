@@ -34,7 +34,7 @@ if ($conn->query($sql)) {
 
 
 <!-- Show form to submit new comment (insert into table, and give the table_name to select the table to insert into) -->
-<form action="/includes/comments/database.php" method="POST">
+<form id="comment_form" action="/includes/comments/database.php" method="POST">
   <input type="hidden" name="action" value="insert">
   <input type="hidden" name="table" value="<?= htmlspecialchars($table_name) ?>">
   
@@ -50,7 +50,7 @@ if ($conn->query($sql)) {
 $result = $conn->query("SELECT * FROM comments_cafemenu");
 
 if ($result && $result->num_rows > 0) {
-    echo "<table border='1'>";
+    echo "<table id='comment_table' border='1'>";
     echo "<tr><th>ID</th><th>Username</th><th>Comment</th><th>Created At</th><th>Likes</th><th>Reports</th></tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
@@ -70,7 +70,7 @@ if ($result && $result->num_rows > 0) {
 
 <!-- Example for like and dislike of a single comment -->
 <!-- Like Button -->
-<form action="/includes/comments/database.php" method="POST">
+<form id="like_form" action="/includes/comments/database.php" method="POST">
   <input type="hidden" name="action" value="like">
 
   <input type="hidden" name="comment_id" value="1">
@@ -78,7 +78,7 @@ if ($result && $result->num_rows > 0) {
 </form>
 
 <!-- Dislike Button -->
-<form action="/includes/comments/database.php" method="POST">
+<form id="dislike_form" action="/includes/comments/database.php" method="POST">
   <input type="hidden" name="action" value="dislike">
 
   <input type="hidden" name="comment_id" value="1">
@@ -86,7 +86,7 @@ if ($result && $result->num_rows > 0) {
 </form>
 
 <!-- Report Button -->
-<form action="/includes/comments/database.php" method="POST">
+<form id="report_form" action="/includes/comments/database.php" method="POST">
   <input type="hidden" name="action" value="report">
 
   <input type="hidden" name="comment_id" value="1">
