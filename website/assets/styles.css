@@ -227,6 +227,12 @@ input#username-input {
     background-color: #0056b3;
 }
 
+button.voted {
+  background-color: #ccc;
+  color: #666;
+  border: 1px solid #999;
+}
+
 /* Style the comments section */
 #comments-container {
   display: flex;

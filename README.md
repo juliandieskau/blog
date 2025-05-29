@@ -84,7 +84,8 @@ exit
     - [x] Show posted comments with buttons for every comment:
       - [x] Delete comments (report voting, 3 reports -> deletes comment)
       - [x] Like/Dislike buttons
-      - [] Make sure every user uses each button only once!
+      - [x] Make sure every user uses each button only once!
+      - [] Format Date better
     - [x] Sort comments by likes
     - [] Add texts to language files
     - [x] Redirect to page at the correct scroll point
@@ -101,3 +102,4 @@ Maybe:
 - [] Make sure no XSS/SQL-Attacks are possible in Forms
 - [] Search bar
 - [] Icon for Title
+- [] Allow Cookies prompt

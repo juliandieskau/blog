@@ -113,7 +113,7 @@ if ($result && $result->num_rows > 0) {
     // - The comment-id that belongs to the comment
     // - The current URI to redirect back to
     echo "
-    <div class='comment-box' data-id='{$commentId}'>
+    <div class='comment-box' data-id='{$commentId}' data-table='{$table_name}'>
       <div class='comment-left'>
         <strong class='comment-username'>{$username}</strong>
         <form action='/includes/comments/database.php' method='POST' class='like-form'>
@@ -121,7 +121,7 @@ if ($result && $result->num_rows > 0) {
           <input type='hidden' name='action' value='like'>
           <input type='hidden' name='comment_id' value='{$commentId}'>
           <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
-          <button type='submit'>👍</button>
+          <button type='submit' class='like-button'>👍</button>
         </form>
         <div class='like-count'>{$likes}</div>
         <form action='/includes/comments/database.php' method='POST' class='dislike-form'>
@@ -129,7 +129,7 @@ if ($result && $result->num_rows > 0) {
           <input type='hidden' name='action' value='dislike'>
           <input type='hidden' name='comment_id' value='{$commentId}'>
           <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
-          <button type='submit'>👎</button>
+          <button type='submit' class='dislike-button'>👎</button>
         </form>
       </div>
       <div class='comment-divider'></div>
@@ -141,7 +141,7 @@ if ($result && $result->num_rows > 0) {
             <input type='hidden' name='action' value='report'>
             <input type='hidden' name='comment_id' value='{$commentId}'>
             <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
-            <button type='submit'>🚩 Report</button>
+            <button type='submit' class='report-button'>🚩 Report</button>
           </form>
         </div>
         <div class='comment-text'>{$comment}</div>
@@ -151,3 +151,4 @@ if ($result && $result->num_rows > 0) {
   echo "</div>";
 } 
 ?>
+<script src="/includes/comments/saveButtons.js"></script>
