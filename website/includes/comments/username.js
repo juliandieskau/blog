@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
       commentForm.submit(); // Now submit
     } else {
-      alert("Username must be 1–30 characters.");
+      alert($lang['username_alert']);
     }
   });
 

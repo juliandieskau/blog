@@ -47,7 +47,7 @@ if ($count_result && $row = $count_result->fetch_assoc()) {
 ?>
 <!-- Show the total amount of comments -->
 <p id="comment-count">
-  <?= $comment_count ?> Comment<?= $comment_count !== 1 ? 's' : '' ?>
+  <?= $comment_count ?> <?= $lang['comments_amount'] ?><?= $comment_count !== 1 ? $lang['comments_plural'] : '' ?>
 </p>
 
 <!-- Show form to submit new comment (insert into table, and give the table_name to select the table to insert into) -->
@@ -61,14 +61,15 @@ if ($count_result && $row = $count_result->fetch_assoc()) {
   <input type="hidden" id="username" name="username" required>
 
   <textarea id="comment" name="comment" maxlength="2000" required 
-    placeholder="Leave a comment..."
+    placeholder="<?= htmlspecialchars($lang['comments_placeholder']) ?>"
   ></textarea>
   <!-- Count the number of characters entered: -->
   <small id="comment-counter">0 / 2000</small>
   
+  <!-- TODO: Disable submit when textarea is empty -->
   <div class="comment-buttons">
-    <button type="button" id="cancel-button">Cancel</button>
-    <button type="submit">Comment</button>
+    <button type="button" id="cancel-button"><?= $lang['comments_post_cancel'] ?></button>
+    <button type="submit"><?= $lang['comments_post_submit'] ?></button>
   </div>
 </form>
 <script src="/includes/comments/grow-textarea.js"></script>
@@ -76,11 +77,12 @@ if ($count_result && $row = $count_result->fetch_assoc()) {
 <!-- Prompt for username on form submit if not saved locally -->
 <div id="username-modal">
   <div id="username-prompt">
-    <h2>Enter your username</h2>
-    <input type="text" id="username-input" maxlength="30" placeholder="Max. 30 characters">
+    <h2><?= $lang['username_heading'] ?></h2>
+    <p><?= $lang['username_only_once'] ?></p>
+    <input type="text" id="username-input" maxlength="30" placeholder="<?= htmlspecialchars($lang['username_placeholder']) ?>">
     <div id="username-buttons">
-      <button id="username-cancel">Cancel</button>
-      <button id="username-save">Save</button>
+      <button id="username-cancel"><?= $lang['username_cancel'] ?></button>
+      <button id="username-save"><?= $lang['username_save'] ?></button>
     </div>
   </div>
 </div>
@@ -104,8 +106,14 @@ if ($result && $result->num_rows > 0) {
     $commentId = (int) $row['id'];
     $username = htmlspecialchars($row['username']);
     $comment = nl2br(htmlspecialchars($row['comment']));
-    $createdAt = htmlspecialchars($row['created_at']);
     $likes = (int) $row['likes'];
+
+    // Format the time depending on the region
+    $locale = $lang['locale'] ?? 'en_US';
+    $timestamp = strtotime($row['created_at']);
+    $formatter = new IntlDateFormatter($locale, IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+    $formatter->setPattern('d. MMMM yyyy');
+    $createdAt = $formatter->format($timestamp);
 
     // For each form send:
     // - The table name the comment belongs to
@@ -141,7 +149,7 @@ if ($result && $result->num_rows > 0) {
             <input type='hidden' name='action' value='report'>
             <input type='hidden' name='comment_id' value='{$commentId}'>
             <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
-            <button type='submit' class='report-button'>🚩 Report</button>
+            <button type='submit' class='report-button'>🚩 {$lang['comments_report']}</button>
           </form>
         </div>
         <div class='comment-text'>{$comment}</div>

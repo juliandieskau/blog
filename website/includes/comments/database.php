@@ -111,6 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
   // Redirect back to page using referrer sent by form or default referrer
+  // WARNING: Only works if nothing has been printed to the website yet (like with echo or <html>)
   $redirect = $_POST['redirect'] ?? $_SERVER['HTTP_REFERER'] ?? '/';
   header("Location: $redirect");
   exit;

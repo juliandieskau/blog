@@ -1,9 +1,6 @@
 # Blog
 Personal blog ("Gruppe" 7)
 
-## Add new pages
-Copy ./template.php to use as a template for all pages. EVERY name of a .php file has to be UNIQUE to ALL other .php blog files and only be made of alphanumerics and underscores!
-
 ## Set up website
 ### Start webserver
 In project root, to start apache webserver and mysql database in blog_default docker-network:
@@ -24,8 +21,10 @@ In Browser, open `localhost:80` to open the homepage.
 ```cmd
 docker compose down
 ```
+## Add new pages
+Copy template.php to use as a template for all pages and projects-template.php for every project blogpost. EVERY name of a .php file has to be UNIQUE to ALL other .php blog files and only be made of alphanumerics and underscores to make database tables for their comments unique!
 
-## Debug website
+## Debug database
 ### Use mysql console
 Open bash as an interactive terminal inside the running mysql container
 ```cmd
@@ -87,7 +86,7 @@ exit
       - [x] Make sure every user uses each button only once!
       - [] Format Date better
     - [x] Sort comments by likes
-    - [] Add texts to language files
+    - [x] Add texts to language files
     - [x] Redirect to page at the correct scroll point
   - [x] Style comments section to look good
 - [] Footer: Display Icons with links to socials / github

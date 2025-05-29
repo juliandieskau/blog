@@ -4,6 +4,7 @@ $lang = [
     "title" => "Julian's Blog",
     "language" => "Sprache",
     "unavailable" => "Diese Seite ist aktuell nicht verfügbar.",
+    "locale" => "de_DE",
 
     // Navigation
     "nav_home" => "Startseite",
@@ -35,6 +36,20 @@ $lang = [
     // Food page
     "food_heading" => "Essen",
     "food_text" => "Hier findest du Rezepte und andere Köstlichkeiten.",
+
+    // COMMENTS
+    "comments_amount" => "Komment",
+    "comments_plural" => "are",
+    "comments_placeholder" => "Kommentar hinzufügen...",
+    "comments_post_cancel" => "Abbrechen",
+    "comments_post_submit" => "Kommentieren",
+    "comments_report" => "Melden",
+    "username_heading" => "Gib deinen Benutzernamen ein",
+    "username_only_once" => "Achtung: Dieser kann danach nicht mehr geändert werden!",
+    "username_placeholder" => "Max. 30 Zeichen",
+    "username_cancel" => "Abbrechen",
+    "username_save" => "Speichern",
+    "username_alert" => "Benutzername muss 1–30 Zeichen lang sein.",
 
     // PROJECTS
     // Cafemenu
