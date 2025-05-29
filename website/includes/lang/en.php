@@ -57,6 +57,23 @@ $lang = [
     "cafemenu_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works. The project includes a index.html and a styles.css that create a one-page document displaying the fictional cafe's menu items.",
     "cafemenu_files" => "The source code to the menu above can be found below:",
 
+    // Cat photo app
+    "catphotoapp_heading" => "Cat Photo App",
+    "catphotoapp_text" => "freeCodeCamp.org project for learning HTML. I recreated the exercise and added some comments to explain how everything works. The project includes a index.html that creates a one-page document displaying cat photos.",
+    "catphotoapp_files" => "The source code to the app above can be found below:",
 
+    // Colored markers
+    "coloredmarkers_heading" => "Colored Markers",
+    "coloredmarkers_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works. The project includes a index.html and a styles.css that create a one-page document displaying three colored markers with CSS and HTML elements.",
+    "coloredmarkers_files" => "The source code to the picture above can be found below:",
 
+    // Registration form
+    "registrationform_heading" => "Registration Form",
+    "registrationform_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works. The project includes a index.html and a styles.css that create a one-page document displaying a registration form that you can submit to their homepage.",
+    "registrationform_files" => "The source code to the form above can be found below:",
+
+    // Rothko painting
+    "rothkopainting_heading" => "Rothko Painting (in progress)",
+    "rothkopainting_text" => "freeCodeCamp.org project for learning HTML and CSS. I recreated the exercise and added some comments to explain how everything works. The project includes a index.html and a styles.css that create a one-page document displaying a painting in a style similar to Rothko.",
+    "rothkopainting_files" => "The source code to the painting above can be found below:",
 ];

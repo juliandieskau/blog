@@ -64,8 +64,8 @@ exit
 - [] Add Content:
   - [x] Add categories to header (remove Contact)
   - [] Add Blog posts:
-    - [] Projects:
-      - [1] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
+    - [x] Projects:
+      - [x] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
     - [] Travel:
       - [] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
     - [] Food:
@@ -77,14 +77,14 @@ exit
 - [] Database that stores comments
   - [x] Create and connect to database
   - [x] Create a table for comments every time you enter a blog page that needs it and doesn't have its own table yet
-  - [] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
+  - [x] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
     - [x] Post comments
     - [x] Username prompt only once and save username, then use stored username for POST
     - [x] Show posted comments with buttons for every comment:
       - [x] Delete comments (report voting, 3 reports -> deletes comment)
       - [x] Like/Dislike buttons
       - [x] Make sure every user uses each button only once!
-      - [] Format Date better
+      - [x] Format Date better
     - [x] Sort comments by likes
     - [x] Add texts to language files
     - [x] Redirect to page at the correct scroll point
