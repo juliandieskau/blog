@@ -34,16 +34,32 @@ if ($conn->query($sql)) {
 <!-- Add a divider above the comment section -->
 <hr id="comment-divider">
 
+<!-- Get the number of comments on the current post -->
+<?php
+$escaped_table = $conn->real_escape_string($table_name);
+
+$count_result = $conn->query("SELECT COUNT(*) as total FROM `$escaped_table`");
+$comment_count = 0;
+
+if ($count_result && $row = $count_result->fetch_assoc()) {
+    $comment_count = (int) $row['total'];
+}
+?>
+<!-- Show the total amount of comments -->
+<p id="comment-count">
+  <?= $comment_count ?> Comment<?= $comment_count !== 1 ? 's' : '' ?>
+</p>
+
 <!-- Show form to submit new comment (insert into table, and give the table_name to select the table to insert into) -->
 <form id="comment_form" action="/includes/comments/database.php" method="POST">
-  <!-- Transmit the SQL action and the table to use -->
+  <!-- Transmit the SQL action, the table to use and the current page to redirect back to -->
   <input type="hidden" name="action" value="insert">
   <input type="hidden" name="table" value="<?= htmlspecialchars($table_name) ?>">
+  <input type='hidden' name='redirect' value='<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>'>
 
   <!-- Transmit the username -->
   <input type="hidden" id="username" name="username" required>
 
-  <!-- TODO: make textarea larger when text doesnt fit! -->
   <textarea id="comment" name="comment" maxlength="2000" required 
     placeholder="Leave a comment..."
   ></textarea>
@@ -70,51 +86,68 @@ if ($conn->query($sql)) {
 </div>
 <script src="/includes/comments/username.js"></script>
 
-<!-- TODO: Show posted comments (save their corresponding ID from the DB)-->
+<!-- Show posted comments (save their corresponding ID from the DB)-->
 <?php
-// Example to show the comments
-$result = $conn->query("SELECT * FROM comments_cafemenu");
+$table = $conn->real_escape_string($table_name);
 
+// Fetch comment table data from database and sort by likes and date
+$sql = "SELECT id, username, comment, created_at, likes 
+        FROM `$table` 
+        ORDER BY likes DESC, created_at DESC";
+
+$result = $conn->query($sql);
+
+// Show comments if they exist.
 if ($result && $result->num_rows > 0) {
-    echo "<table id='comment_table' border='1'>";
-    echo "<tr><th>ID</th><th>Username</th><th>Comment</th><th>Created At</th><th>Likes</th><th>Reports</th></tr>";
-    while ($row = $result->fetch_assoc()) {
-        echo "<tr>
-            <td>{$row['id']}</td>
-            <td>" . htmlspecialchars($row['username']) . "</td>
-            <td>" . htmlspecialchars($row['comment']) . "</td>
-            <td>{$row['created_at']}</td>
-            <td>{$row['likes']}</td>
-            <td>{$row['reports']}</td>
-        </tr>";
-    }
-    echo "</table>";
-} else {
-    error_log("No comments found.");
-}
+  echo "<div id='comments-container'>";
+  while ($row = $result->fetch_assoc()) {
+    $commentId = (int) $row['id'];
+    $username = htmlspecialchars($row['username']);
+    $comment = nl2br(htmlspecialchars($row['comment']));
+    $createdAt = htmlspecialchars($row['created_at']);
+    $likes = (int) $row['likes'];
+
+    // For each form send:
+    // - The table name the comment belongs to
+    // - The action the form does
+    // - The comment-id that belongs to the comment
+    // - The current URI to redirect back to
+    echo "
+    <div class='comment-box' data-id='{$commentId}'>
+      <div class='comment-left'>
+        <strong class='comment-username'>{$username}</strong>
+        <form action='/includes/comments/database.php' method='POST' class='like-form'>
+          <input type='hidden' name='table' value='" . htmlspecialchars($table_name) . "'>
+          <input type='hidden' name='action' value='like'>
+          <input type='hidden' name='comment_id' value='{$commentId}'>
+          <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
+          <button type='submit'>👍</button>
+        </form>
+        <div class='like-count'>{$likes}</div>
+        <form action='/includes/comments/database.php' method='POST' class='dislike-form'>
+          <input type='hidden' name='table' value='" . htmlspecialchars($table_name) . "'>
+          <input type='hidden' name='action' value='dislike'>
+          <input type='hidden' name='comment_id' value='{$commentId}'>
+          <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
+          <button type='submit'>👎</button>
+        </form>
+      </div>
+      <div class='comment-divider'></div>
+      <div class='comment-right'>
+        <div class='comment-meta'>
+          <span class='comment-date'>{$createdAt}</span>
+          <form action='/includes/comments/database.php' method='POST' class='report-form'>
+            <input type='hidden' name='table' value='" . htmlspecialchars($table_name) . "'>
+            <input type='hidden' name='action' value='report'>
+            <input type='hidden' name='comment_id' value='{$commentId}'>
+            <input type='hidden' name='redirect' value='" . htmlspecialchars($_SERVER['REQUEST_URI']) . "'>
+            <button type='submit'>🚩 Report</button>
+          </form>
+        </div>
+        <div class='comment-text'>{$comment}</div>
+      </div>
+    </div>";
+  }
+  echo "</div>";
+} 
 ?>
-
-<!-- Example for like and dislike of a single comment -->
-<!-- Like Button -->
-<form id="like_form" action="/includes/comments/database.php" method="POST">
-  <input type="hidden" name="action" value="like">
-
-  <input type="hidden" name="comment_id" value="1">
-  <button type="submit">Like</button>
-</form>
-
-<!-- Dislike Button -->
-<form id="dislike_form" action="/includes/comments/database.php" method="POST">
-  <input type="hidden" name="action" value="dislike">
-
-  <input type="hidden" name="comment_id" value="1">
-  <button type="submit">Dislike</button>
-</form>
-
-<!-- Report Button -->
-<form id="report_form" action="/includes/comments/database.php" method="POST">
-  <input type="hidden" name="action" value="report">
-
-  <input type="hidden" name="comment_id" value="1">
-  <button type="submit">Report</button>
-</form>

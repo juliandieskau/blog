@@ -44,10 +44,6 @@ List tables in database
 ```mysql
 SHOW TABLES;
 ```
-Select the blog database
-```mysql
-USE blogdb;
-```
 Show the contents of a table
 ```mysql
 SELECT * FROM table_name;
@@ -85,13 +81,14 @@ exit
   - [] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
     - [x] Post comments
     - [x] Username prompt only once and save username, then use stored username for POST
-    - [] Show posted comments with buttons for every comment:
-      - [] Delete comments (report voting, 3 reports -> deletes comment)
-      - [] Like/Dislike buttons
-    - [] Sort comments by likes
+    - [x] Show posted comments with buttons for every comment:
+      - [x] Delete comments (report voting, 3 reports -> deletes comment)
+      - [x] Like/Dislike buttons
+      - [] Make sure every user uses each button only once!
+    - [x] Sort comments by likes
     - [] Add texts to language files
     - [x] Redirect to page at the correct scroll point
-  - [] Style comments section to look good
+  - [x] Style comments section to look good
 - [] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
