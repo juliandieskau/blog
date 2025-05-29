@@ -1,6 +1,6 @@
 <?php
 // Connect to database
-include(RPATH . '/includes/comments/connection.php');
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/comments/connection.php';
 
 // SQL Concept:
 // One Table for each Blog Post, uniquely tied to the page by the filename
@@ -25,19 +25,13 @@ $sql = "CREATE TABLE IF NOT EXISTS `$table_name`(
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
 
 if ($conn->query($sql)) {
-  echo("To be created table exists<br>");
+  error_log("Table exists already or was successfully created.");
 } else {
-  echo("Table not found: " . $conn->error . "<br>");
+  error_log("Table not found: " . $conn->error);
 }
 ?>
 
-<!-- Show messages -->
-<?php if (!empty($_SESSION['flash_message'])): ?>
-    <div class="flash-message">
-        <?= htmlspecialchars($_SESSION['flash_message']) ?>
-    </div>
-    <?php unset($_SESSION['flash_message']); ?>
-<?php endif; ?>
+
 
 <!-- Show form to submit new comment (insert into table, and give the table_name to select the table to insert into) -->
 <form action="/includes/comments/database.php" method="POST">
@@ -70,7 +64,7 @@ if ($result && $result->num_rows > 0) {
     }
     echo "</table>";
 } else {
-    echo "No comments found.";
+    error_log("No comments found.");
 }
 ?>
 

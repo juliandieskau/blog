@@ -36,9 +36,25 @@ Login to database inside mysql container, when asked type in the password found 
 mysql -u julian -p blogdb
 julianpassword
 ```
-Example for mysql commands: Show databases
+Example for mysql commands: List databases
 ```mysql
-show databases;
+SHOW databases;
+```
+List tables in database
+```mysql
+SHOW TABLES;
+```
+Select the blog database
+```mysql
+USE blogdb;
+```
+Show the contents of a table
+```mysql
+SELECT * FROM table_name;
+```
+Delete a table
+```mysql
+DROP TABLE table_name;
 ```
 ### Exit mysql console
 ```mysql
@@ -64,11 +80,14 @@ exit
     - [] Home page: Short description of me (link to profile)
   - [] Add category-pages that list blog posts in their category (and preview?)
 - [] Database that stores comments
+  - [x] Create and connect to database
+  - [x] Create a table for comments every time you enter a blog page that needs it and doesn't have its own table yet
   - [] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
-    - [] Post comments
+    - [x] Post comments
     - [] Show posted comments
     - [] Delete comments (report voting)
     - [] Like/Dislike buttons
+  - [] Style comments section to look good
 - [] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens

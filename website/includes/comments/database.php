@@ -31,15 +31,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           $stmt->execute();
           $stmt->close();
 
-          $_SESSION['flash_message'] = "Comment submitted successfully!";
+          error_log("Comment submitted successfully!");
         } else {
-          $_SESSION['flash_message'] = "Error: " . htmlspecialchars($conn->error);
+          error_log("Error: " . htmlspecialchars($conn->error));
         }
       } else {
-        $_SESSION['flash_message'] = "Invalid table name detected.";
+        error_log("Error: Invalid table name detected.");
       }
     } else {
-      $_SESSION['flash_message'] = "Please fill out all fields.";
+      error_log("Error: Not all fields filled out.");
     }
   } elseif ($action === 'like') {
     // UPDATE comment SET likes = likes + 1 WHERE id = ...
@@ -52,7 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $redirect = $_SERVER['HTTP_REFERER'] ?? '/';
   header("Location: $redirect");
   exit;
-  // delete query parameters after being used, so it doesn't get resubmitted on reload of page
-  // reload page with empty form without having to press confirm
+  // TODO: redirect to where it was scrolled to before
 }
 ?>
