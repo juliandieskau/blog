@@ -31,7 +31,8 @@ if ($conn->query($sql)) {
 }
 ?>
 
-
+<!-- Add a divider above the comment section -->
+<hr id="comment-divider">
 
 <!-- Show form to submit new comment (insert into table, and give the table_name to select the table to insert into) -->
 <form id="comment_form" action="/includes/comments/database.php" method="POST">
@@ -42,15 +43,19 @@ if ($conn->query($sql)) {
   <!-- Transmit the username -->
   <input type="hidden" id="username" name="username" required>
 
-  <label for="comment">
-    Comment: 
-    <textarea id="comment" name="comment" maxlength="2000" required></textarea>
-    <!-- Count the number of characters entered: -->
-    <small id="comment-counter">0 / 2000</small>
-  </label>
+  <!-- TODO: make textarea larger when text doesnt fit! -->
+  <textarea id="comment" name="comment" maxlength="2000" required 
+    placeholder="Leave a comment..."
+  ></textarea>
+  <!-- Count the number of characters entered: -->
+  <small id="comment-counter">0 / 2000</small>
   
-  <button type="submit">Submit</button>
+  <div class="comment-buttons">
+    <button type="button" id="cancel-button">Cancel</button>
+    <button type="submit">Comment</button>
+  </div>
 </form>
+<script src="/includes/comments/grow-textarea.js"></script>
 
 <!-- Prompt for username on form submit if not saved locally -->
 <div id="username-modal">

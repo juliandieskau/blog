@@ -4,18 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const commentForm = document.getElementById("comment_form");
   const usernameField = document.getElementById("username");
   const commentField = document.getElementById("comment");
-  const commentCounter = document.getElementById("comment-counter");
 
   // Get values of the username modal
   const modal = document.getElementById("username-modal");
   const usernameInput = document.getElementById("username-input");
   const usernameSaveBtn = document.getElementById("username-save");
   const usernameCancelBtn = document.getElementById("username-cancel");
-
-  // Count characters in comment input
-  commentField.addEventListener("input", () => {
-    commentCounter.textContent = `${commentField.value.length} / 2000`;
-  });
 
   // Try to load saved username
   const savedUsername = localStorage.getItem("commentUsername");
