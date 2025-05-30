@@ -81,39 +81,68 @@ $lang = [
     // JAPAN 24
     // Day 0: Arrival in Tokyo
     "japan_day0arrival_heading" => "Ankunft in Tokio - Japanreise 2024",
-    "japan_day0arrival_preface" => "Ich habe begonnen, auf Instagram Bilder von meiner letztjährigen Japanreise zu posten, aber es hat unglaublich viel Zeit gekostet, passende Texte dazu zu schreiben. 
-            Ich wollte meine Erfahrungen wirklich gerne teilen - auch, um sie für mich selbst festzuhalten und mich später daran erinnern zu können. 
-            Aber das Format auf Instagram war einfach nicht ideal: Man kann kein Bild direkt dem Text zuordnen, und die Zeichenbegrenzung machte es schwer, meine Gedanken vollständig auszudrücken. 
-            Da man außerdem nur Bilder im gleichen Format hochladen kann, habe ich mich entschieden, meine Geschichten stattdessen hier mit euch zu teilen.",
-    "japan_day0arrival_p1" => "Zum ersten Mal alleine zu fliegen - und dann direkt auf die andere Seite der Welt - hat mir ehrlich gesagt Angst gemacht. Und das zurecht. 
-            Ein Monat Vorbereitung hätte mich nie auf den Schock vorbereiten können, irgendwo Fremdes anzukommen und ganz auf sich allein gestellt zu sein, bis man selbst zurechtkommt. 
-            Ich kann es wirklich jedem empfehlen - es hilft einem enorm, persönlich zu wachsen.",
-    "japan_day0arrival_p2" => "Japan selbst war nicht so ein 'Kulturschock', wie viele es immer darstellen. 
-            Es war immer noch einfach nur eine Stadt, mit Menschen. Nur eine andere Sprache, anderes Essen und andere Gewohnheiten - aber für mich fühlte es sich dennoch vertraut an. 
-            Vielleicht klingt es überheblich zu sagen, dass meine Denk- und Verhaltensweise gut mit der japanischen harmoniert, aber für mich fühlte es sich genau so an.",
-    "japan_day0arrival_p3" => "Vielleicht lag es an den Jahren, in denen ich langsam ein bisschen Japanisch, die Kultur und Gewohnheiten gelernt habe, und die auch mein Verhalten beeinflusst haben. 
-            Vielleicht war es aber auch etwas anderes. Dieses Gefühl von Ruhe und Reinheit habe ich über die gesamte Reise hinweg sehr genossen.",
-    "japan_day0arrival_p4" => "Ich konnte schon am ersten Tag viele Dinge genießen, die ich jetzt schon vermisse. 
-            Angefangen bei den Verkaufsautomaten an jeder Ecke - nicht nur in der Stadt. Die verschiedenen Softdrinks wie Calpis Soda, weiße Pfirsichlimonade, kalter grüner Tee oder einfach Kaffee - 
-            die Bequemlichkeit, sich keine Getränke für den ganzen Tag einpacken zu müssen, weil man überall günstig welche findet, war einfach großartig.",
-    "japan_day0arrival_p5" => "Und dann die Convenience Stores… Der Name ist absolut gerechtfertigt. Sie bieten nicht nur eine große Auswahl an kalten Getränken und verzehrfertigen Mahlzeiten in allen Varianten (auch gesunde!), 
-            sondern am meisten überrascht haben mich die 'heißen Kühlschränke', die heiße Getränke wie Kaffee oder Tee bereithalten, aber wie ganz normale Kühlschränke aussehen. 
-            Einfach spontan einen heißen Kaffee statt einem kalten mitnehmen - wenn man gerade Lust darauf hatte...",
-    "japan_day0arrival_p7" => "Bei der Ankunft ging meine Pechsträhne weiter: Nachdem ich den Weg zur Zugstation am Flughafen nicht gefunden habe, blieb mir nur noch eine Stunde im Hostel vor dem Treffen mit der Reisegruppe. 
-            In der Zeit musste ich das Anmeldeformular ausfüllen und mein Gepäck im Zimmer verstauen. Zum Glück traf ich dann eines der anderen Gruppenmitglieder, das mir half, nachdem ich minutenlang versucht hatte, mit dem erhaltenen Code die Zimmertür zu öffnen. 
-            Und als ob es nicht schlimmer kommen könnte, bekam ich dann mit nur noch 20 Minuten Zeit auch noch Nasenbluten. Komplett gestresst wartete ich, bis es aufhörte, zog mir schnell ein frisches T-Shirt an und eilte zum Gruppentreffen.",
-    "japan_day0arrival_p8" => "Danach gingen wir zusammen in ein kleines japanisches Restaurant. Ich merkte, dass ich die Hälfte der Getränkekarte lesen konnte, weil sie in Katakana geschrieben war - also fing ich an, für meine Mitreisenden zu übersetzen, 
-            die außer einem schnellen 'Konnichi wa' und 'Arigatou' kein Japanisch konnten. Es hat total Spaß gemacht, mit allen zu sprechen, zu essen und sie kennenzulernen. Wir haben uns sofort gut verstanden.",
-    "japan_day0arrival_p9" => "Das enge Hostelzimmer mit sechs Leuten und kaum Platz, den Koffer zu öffnen, war eine echte Herausforderung. Einer musste sogar auf den Flur gehen, nur um seine Zahnbürste herauszuholen. 
-            Eine komplett andere Umgebung als gewohnt. Aber durch die vielen Menschen aus aller Welt, die ich dort getroffen habe, fing ich schon an, die Zeit richtig zu genießen.",
+    "japan_day0arrival_preface" => "Ich habe angefangen, auf Instagram Bilder von meiner Japanreise im letzten Jahr zu posten, aber es hat ewig gedauert, die passenden Geschichten dazu zu schreiben. 
+            Ich wollte meine Erlebnisse unbedingt teilen - auch, um sie selbst für die Zukunft festzuhalten. Aber das Format auf Instagram hat für mich einfach nicht gepasst. 
+            Man kann dort die Bilder nicht direkt mit dem Text verbinden und die Zeichenbegrenzung hat es schwierig gemacht, alles zu erzählen, was ich sagen wollte. 
+            Da man dort auch nur Bilder im gleichen Format posten kann, habe ich mich entschieden, meine Reisegeschichten lieber hier mit euch zu teilen.",
+    "japan_day0arrival_p1" => "Zum ersten Mal allein fliegen - und dann gleich ans andere Ende der Welt - hat mich ehrlich gesagt ziemlich nervös gemacht. 
+            Ein ganzer Monat Vorbereitung hätte mich nicht auf den Kulturschock vorbereitet, wenn man irgendwo Fremdem ankommt und auf sich allein gestellt ist, bis man sich zurechtfindet. 
+            Trotzdem kann ich es nur jedem empfehlen - es hilft unglaublich beim Wachsen.",
+    "japan_day0arrival_p2" => "Japan selbst war gar nicht so 'kulturschockmäßig', wie viele immer sagen. 
+            Es ist eben auch einfach eine Stadt, mit Menschen. Nur die Sprache, das Essen und die Gewohnheiten sind anders - und trotzdem hat es sich für mich richtig angefühlt. 
+            Vielleicht klingt es vermessen, aber ich hatte das Gefühl, dass meine Denkweise und mein Verhalten gut dazu passen.",
+    "japan_day0arrival_p3" => "Vielleicht liegt es daran, dass ich über Jahre hinweg ein wenig Japanisch, Kultur und Gepflogenheiten gelernt habe und mich das mitgeprägt hat. 
+            Aber dieses Gefühl von Ruhe und Klarheit habe ich auf der Reise wirklich genossen.",
+    "japan_day0arrival_p4" => "Es gab so viele Dinge, die ich vom ersten Tag an liebgewonnen habe - zum Beispiel die Getränkeautomaten an jeder Ecke, selbst außerhalb der Städte! 
+            Die verschiedenen Softdrinks wie Calpis Soda, weißer Pfirsich, kalter Grüntee oder Kaffee… 
+            Einfach überall spontan und günstig Getränke holen zu können, ohne vorher planen zu müssen, war einfach genial.",
+    "japan_day0arrival_p5" => "Und dann die Convenience Stores… Sie machen ihrem Namen wirklich alle Ehre! 
+            Neben einer großen Auswahl an kalten Getränken und sofort verzehrbaren, oft sogar gesunden Mahlzeiten, haben mich besonders die 'heißen Kühlschränke' überrascht - 
+            Getränke wie Kaffee einfach warm aus dem Regal nehmen, wo es wie in einem normalen Supermarkt aussieht. Einfach praktisch!",
+    "japan_day0arrival_p7" => "Direkt bei der Ankunft ging mein Pech weiter: Ich habe den Weg zum Bahnhof nicht gefunden und hatte dann nur noch eine Stunde im Hostel, bevor das Treffen mit der Reisegruppe anstand. 
+            In der Zeit musste ich mich registrieren und mein Gepäck im Zimmer verstauen. Zum Glück hat mir einer aus der Gruppe geholfen, nachdem ich minutenlang versucht habe, mit dem Passwort ins Zimmer zu kommen. 
+            Und als wäre das nicht genug, habe ich dann auch noch Nasenbluten bekommen - 20 Minuten vor dem Treffen. Völlig gestresst habe ich gewartet, bis es vorbei war, und mich schnell umgezogen. Dann ging’s direkt weiter zum Gruppenmeeting.",
+    "japan_day0arrival_p8" => "Später sind wir gemeinsam in ein kleines japanisches Restaurant gegangen und ich habe gemerkt, dass ich die Hälfte der Getränkekarte lesen konnte - dank Katakana! 
+            Ich habe dann angefangen, für die anderen zu übersetzen, die außer einem kurzen 'Konnichi wa' oder 'Arigatou' kein Japanisch konnten. 
+            Es war richtig schön, alle kennenzulernen, gemeinsam zu essen und zu reden - wir haben uns sofort verstanden.",
+    "japan_day0arrival_p9" => "Das enge Hostelzimmer mit sechs Personen und kaum Platz, um seinen Rucksack zu öffnen, war eine echte Herausforderung. 
+            Einer musste sogar auf den Flur gehen, um an seine Zahnbürste zu kommen! 
+            Aber als ich all diese Menschen aus der ganzen Welt getroffen habe, hat das Ganze schon richtig Spaß gemacht.",
     "japan_day0arrival_c1" => "Ankunft am Flughafen Narita",
-    "japan_day0arrival_c2" => "Erster Blick auf die fremde Stadt nach dem Verlassen der U-Bahn",
+    "japan_day0arrival_c2" => "Erster Blick auf die fremde Stadt nach der U-Bahn-Fahrt",
     "japan_day0arrival_c3" => "Typischer Strommast in Ginza, Tokio",
-    "japan_day0arrival_c4" => "Erster Blick auf einen der vielen ikonischen Verkaufsautomaten",
-    "japan_day0arrival_c5" => "Tiefkühl-Obst und -Gemüseauswahl in einem 7Eleven",
+    "japan_day0arrival_c4" => "Zum ersten Mal einen der vielen Automaten entdeckt",
+    "japan_day0arrival_c5" => "Tiefkühl-Obst- und Gemüseauswahl in einem 7Eleven",
     "japan_day0arrival_c6" => "'Heißer Kühlschrank' mit warmen Getränken wie Kaffee und Tee",
     "japan_day0arrival_c7" => "Blick aus dem Hostelzimmer",
-    "japan_day0arrival_c8" => "Erstes Abendessen mit den Mitgliedern meiner Reisegruppe: Nur eine Calpis Soda, etwas Edamame und Pommes - einfach, aber lecker",
-    "japan_day0arrival_c9" => "Blick auf das Hostelzimmer von meinem Bett aus",
+    "japan_day0arrival_c8" => "Erstes gemeinsames Abendessen mit der Reisegruppe: Calpis Soda, Edamame und Pommes - einfach, aber lecker",
+    "japan_day0arrival_c9" => "Blick aus meinem Bett ins Hostelzimmer",
+
+    // Day 1: Walk through Shibuya and Harajuku
+    "japan_day1shibuya_heading" => "Spaziergang durch Shibuya und Harajuku - Japanreise 2024",
+    "japan_day1shibuya_c1" => "Melonen-Fanta, Onigiri mit 'Eigelb, Sojasoße & Brühe' und ein Anko-Brötchen zum Frühstück",
+    "japan_day1shibuya_c2" => "Onigiri mit einem weichgekochten, in Sojasoße eingelegten Eigelb in der Mitte und durchsichtigem, leicht klebrigem Reis - genau die richtige Konsistenz und definitiv meine Lieblingssorte",
+    "japan_day1shibuya_p3" => "Was ich auf dieser Reise vielleicht am meisten gelernt habe: Gute Gesellschaft ist wirklich das Wertvollste. Ich bin unglaublich dankbar, so viele wundervolle Menschen aus aller Welt kennengelernt zu haben. 
+            An all die tollen Menschen, die mich begleitet haben: Danke euch! Ihr habt meinen Aufenthalt noch besonderer gemacht - es war eine großartige Zeit mit euch.",
+    "japan_day1shibuya_c3" => "Blühende Bäume beim Tokyo Square Garden Einkaufszentrum",
+    "japan_day1shibuya_p4" => "Eine Reise zu buchen, ohne zu wissen, mit wem man am Ende unterwegs ist - und die Gruppe dann zum ersten Mal im Hostel zu treffen - war schon aufregend. 
+            Ich war ehrlich überrascht, wie gut alles harmoniert hat und wie schnell ich mich an alle gewöhnt habe.",
+    "japan_day1shibuya_c4" => "Shibuya 'Scramble Crossing' am Morgen - ein ganz anderer Anblick als am Abend, wenn es voller ist",
+    "japan_day1shibuya_p5" => "Nie hätte ich gedacht, dass meine Englischkenntnisse durch eine Japanreise so viel besser werden würden. 
+            Ich war unterwegs mit Australiern, Briten, einem Amerikaner, einer Kanadierin, jemandem aus Südafrika und Indien - und unser Reiseleiter kam aus Frankreich und sprach Englisch mit diesem großartigen Akzent, dazu fließend Japanisch. 
+            Ich kann gar nicht zählen, wie oft sich mein eigener Akzent verändert hat - man konnte fast hören, mit wem ich den Tag über unterwegs war 😅.",
+    "japan_day1shibuya_c5" => "Blick auf die Shibuya-Kreuzung durch das Fenster am Bahnhof Shibuya",
+    "japan_day1shibuya_p6" => "Durch Shibuya zu laufen war am Anfang ein bisschen enttäuschend - vor allem morgens, wenn es noch ruhig ist, und man merkt, wie klein die berühmte Kreuzung eigentlich ist. 
+            Aber das Gefühl verflog schnell, sobald man durch die Straßen lief - da gab es so viel zu entdecken.",
+    "japan_day1shibuya_c6" => "Buntes Gebäude in Shibuya",
+    "japan_day1shibuya_p7" => "Leider sind wir ziemlich schnell durch Harajuku durchgelaufen - auf dem Weg zu einem bekannten Ramen-Laden, den unser Guide empfohlen hatte. 
+            Meine zwei Begleiter und ich hatten auch nicht so großes Interesse an der Mode oder den Katzencafés, also haben wir da wohl nicht allzu viel verpasst. 
+            Ich hätte allerdings echt gern eins dieser Crêpe-Eis-Dinger probiert... Nächstes Mal dann!",
+    "japan_day1shibuya_c7" => "Belebte Straße in Harajuku",
+    "japan_day1shibuya_p8" => "Es ist schwer zu beschreiben, was genau anders ist als bei uns - aber es war einfach spannend, diese endlose Reihe an Läden zu sehen, die alle etwas ganz Eigenes verkaufen, wovon ich oft nicht mal wusste, dass es dafür überhaupt Geschäfte gibt. 
+            Und das Essen... Die Straßen, die man sonst nur aus Anime oder Videos kennt, in echt zu erleben - das sollte man sich nicht entgehen lassen.",
+    "japan_day1shibuya_c8" => "Eisladen mit Crêpes in Harajuku",
+    "japan_day1shibuya_c9" => "'Tower Records', ein riesiger Laden für Schallplatten",
+    "japan_day1shibuya_c10" => "Shibuya-Kreuzung auf dem Rückweg - jetzt deutlich voller",
 
 ];

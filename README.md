@@ -106,3 +106,4 @@ exit
 - [] Search bar
 - [] Icon for Title
 - [] Allow Cookies prompt
+- [] Disable liking own comments

@@ -114,5 +114,24 @@ $lang = [
     "japan_day0arrival_c8" => "First dinner together with the members of my travel group: Just a Calpis soda, some edamame and some fries - simple but tasty",
     "japan_day0arrival_c9" => "View of the hostel room from my bed",
     
+    // Day 1: Walk through Shibuya and Harajuku
+    "japan_day1shibuya_heading" => "Walk through Shibuya and Harajuku - Japan Trip 2024",
+    "japan_day1shibuya_c1" => "Melon Fanta, 'Egg Yolk, Soysauce & Broth' Onigiri and Anko-Bun for breakfast",
+    "japan_day1shibuya_c2" => "Onigiri with jammy soysauce-cured eggyolk in the middle and translucent, chewy rice - just the perfect consistency and definitely my favourite flavor",
+    "japan_day1shibuya_p3" => "What I perhaps learnt the most over this entire trip is that great company is the most precious thing. I'm extremely thankful to have been able to get to know so many wonderful people from all over the world. So to all the beautiful people accompanying me: Thank you! You truly made my stay worth even more and it was a great time.",
+    "japan_day1shibuya_c3" => "Blooming trees at Tokyo Square Garden Mall",
+    "japan_day1shibuya_p4" => "Booking a trip unknowing of the group I would be traveling with until meeting for the first time in the hostel was exciting to say the least. I was honestly surprised how well it worked together and how quickly I got accustomed to everyone.",
+    "japan_day1shibuya_c4" => "Shibuya 'Scramble-Crossing' in the morning - quite a different sight than how busy it is at night",
+    "japan_day1shibuya_p5" => "Never would I have thought that making a trip to Japan would polish my english skills to this extent, traveling alongside Australians, Britains, an American and Canadian, someone from South Africa and India and a tour guide from france speaking English in this great accent of him, while also being astonishingly fluent in Japanese.
+            I can't count on how many times my accent has changed over those days, but it was quite funny😅 You could literally hear from my accent who i was traveling with over the day, just being influenced by them!",
+    "japan_day1shibuya_c5" => "View on Shibuya Crossing through the window at Shibuya Station",
+    "japan_day1shibuya_p6" => "Walking through Shibuya for the first time was actually kind of disappointing, being there in the early morning and seeing how small the crossing actually was but it was quickly made up for just walking through the streets.",
+    "japan_day1shibuya_c6" => "Colorful building in Shibuya",
+    "japan_day1shibuya_p7" => "I sadly passed through Harajuku in a hurry, on our way to the famed Ramen-shop our guide recommended to us on our way through Shibuya. My two companions and I also didn't have much of an interest for the fashion displayed nor the cat-cafes, so I guess it wasn't missing out on too much. I really wanted to try one of the crepe ice-creams though. Maybe next time...",
+    "japan_day1shibuya_c7" => "Busy Harajuku-Street",
+    "japan_day1shibuya_p8" => "It's difficult to describe how it's different from our city streets but it was just exciting seeing the never ending row of stores with all kinds of goods I never knew there were shops for. And the food... Just seeing the familiar streets known from anime and videos come to life was an experience anyone should miss. ",
+    "japan_day1shibuya_c8" => "Ice-cream Crêpes shop in Harajuku",
+    "japan_day1shibuya_c9" => "'Tower records', a huge shop selling vinyl's",
+    "japan_day1shibuya_c10" => "Shibuya crossing on the way back, a lot busier now",
 
 ];
