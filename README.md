@@ -60,9 +60,10 @@ exit container interactive terminal
 exit
 ```
 
-## TODO
+## Requirements
 - [] Add Content:
   - [x] Add categories to header (remove Contact)
+  - [] Function that provides way to easily add a text, image and image caption in a standardized way to a blog post
   - [] Add Blog posts:
     - [x] Projects:
       - [x] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
@@ -92,7 +93,10 @@ exit
 - [] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
-Maybe:
+- [] Website erstes mal Laden steht Sprache auf Deutsch aber website auf enlgisch geladen
+- [] Init File for loading a few SQL rows into the tables each to give a usable initial state
+
+## 
 - [] Finish Design/Layout of website:
   - [] Header untereinander und einklappen mit Hamburger Menu wenn screen nicht breit genug
 - [] Display localhost/ as localhost/index.php
