@@ -133,5 +133,29 @@ $lang = [
     "japan_day1shibuya_c8" => "Ice-cream Crêpes shop in Harajuku",
     "japan_day1shibuya_c9" => "'Tower records', a huge shop selling vinyl's",
     "japan_day1shibuya_c10" => "Shibuya crossing on the way back, a lot busier now",
-
+    
+    // FOOD
+    // Matcha Tutorial
+    "food_matchaTutorial_heading" => "Matcha Tutorial",
+    "food_matchaTutorial_preface" => "I have had two particular passions for a long time now: Food and Japan. For a long time I already started to combinge them.
+            One of the more simlpe but also exceedingly complex ingredients in Japanese cuisine is Matcha. I think at this point nearly everyone already knows about it,
+            and some love it, some hate it. So to start my journey in sharing all the incredible recipes I make frequently, I want to share this basic way of preparing the 
+            wonderful drink of matcha. No Latte, no sugar, just the tea powder itself. It is said to be incredibly healthy but I don't really care about that.
+            For me it's the taste and the ritual of it in the morning to start my day, thats exciting. And I want to take you along.",
+    "food_matchaTutorial_p1" => "To start off, you only need 3 things: A mug with a wide base, a whisk (preferrably a matcha whisk) and Matcha powder. I would recommand using
+            a precision scale to weigh the ingredients and a kettle, that can show the temperature because without those the process is less consistent - but they are not needed.
+            The first, and most important step is to preheat and soak the matcha whisk, by placing it in the cup and filling it with 70°C hot water and then leave it for 2 minutes.
+            This is crucial, because it makes the bamboo soft so you don't end up with wooden splinters in your matcha. Then discard the water and place the whisk to the side and 
+            weigh 1.5-2g of matcha powdert into the mug. With these low amounts just taking a teaspoon is fine too, but it will always be different, with a scale you can observe which amount works best for you.",
+    "food_matchaTutorial_p2" => "The second most important thing is to break up the clumps of powder in a little amount of water to make it as smooth as possible. 
+            That's where a matcha whisk is paramount, because a normal whisk is too round at the bottom and not granular enough to really smoothen out everything.",
+    "food_matchaTutorial_p3" => "In the past I always had problems with the matcha being clumpy or having a bunch of powder at the bottom, if you take the correct amounts and whisk correctly, that's not going to happen.
+            So just add a little bit of the 70°C water to the powder and then whisk it until everything feels smooth and no clumps are visible anymore, that's the easiest when it is really thick.",
+    "food_matchaTutorial_p4" => "Only then you should add the whole amount of water and whisk it properly. For this amount of matcha and a normal cup, add about 80ml (80g) of 70°C hot water
+            and whisk it until it is foamy. The key to using a matcha whisk (and I have to thank Sensei Matcha Samurai for the explanation) is to not use a circular motion, but a linear one
+            with as little strength as possible. Just use a relaxed hand and whisk front and back quickly until it foams up, then slowly make one circle to spread the foam around the whole cup - that's it.",
+    "food_matchaTutorial_p5" => "I know the explanation was pretty long but when you try it out and know what to do, it's just really easy and works every time. If you use the right temperature of
+            water and make it properly the taste is going to be amazing (if you like the grassy flavor). Even with really cheap Matcha (I use one that is 5€ for 80g from China) it shouldn't taste bitter.
+            That's probably a sign that your water was too hot. One last important thing is to clean the whisk under running water and use a matcha whisk stand to spread out the whisk while drying.
+            This will make sure that even after using it for a long time that it stays wide open, otherwise it will quickly shrink or get uneven, so I definitely recommand to get one, to not treat the whisk like a consumable.",
 ];

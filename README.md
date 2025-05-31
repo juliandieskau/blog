@@ -67,11 +67,10 @@ exit
   - [] Add Blog posts:
     - [x] Projects:
       - [x] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
-    - [] Travel:
-      - [] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
+    - [2] Travel:
+      - [2] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
     - [] Food:
       - [] Matcha Anleitung
-      - [] Rezepte mit Bildern, die ich recently gemacht habe
     - [] About page: Japan side profile and text what i do
     - [] Home page: Short description of me (link to profile)
   - [] Add category-pages that list blog posts in their category (and preview?)
@@ -95,7 +94,7 @@ exit
 - [] 22.06. Abgabe allerspätestens
 - [] Website erstes mal Laden steht Sprache auf Deutsch aber website auf enlgisch geladen
 - [] Init File for loading a few SQL rows into the tables each to give a usable initial state
-
+- [] Code Viewer Höhe begrenzen und scrollable machen
 ## 
 - [] Finish Design/Layout of website:
   - [] Header untereinander und einklappen mit Hamburger Menu wenn screen nicht breit genug
@@ -107,3 +106,4 @@ exit
 - [] Icon for Title
 - [] Allow Cookies prompt
 - [] Disable liking own comments
+- [] Blog: Rezepte mit Bildern, die ich recently gemacht habe

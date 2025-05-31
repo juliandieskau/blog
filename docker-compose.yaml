@@ -2,6 +2,7 @@ services:
   web:
     build: .
     container_name: blog_apache
+    restart: on-failure
     ports:
       - "80:80"
     volumes:
@@ -12,7 +13,7 @@ services:
   db:
     image: mysql:latest
     container_name: blog_mysql
-    restart: unless-stopped
+    restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: blogdb

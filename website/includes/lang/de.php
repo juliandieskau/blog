@@ -145,4 +145,35 @@ $lang = [
     "japan_day1shibuya_c9" => "'Tower Records', ein riesiger Laden für Schallplatten",
     "japan_day1shibuya_c10" => "Shibuya-Kreuzung auf dem Rückweg - jetzt deutlich voller",
 
+    // FOOD
+    // Matcha Tutorial
+    "food_matchaTutorial_heading" => "Matcha-Tutorial",
+    "food_matchaTutorial_preface" => "Ich habe schon lange zwei große Leidenschaften: Essen und Japan. Schon seit einiger Zeit versuche ich beides miteinander zu verbinden. 
+            Eine der einfachsten und gleichzeitig komplexesten Zutaten der japanischen Küche ist Matcha. Ich denke, mittlerweile kennt ihn fast jeder - manche lieben ihn, manche hassen ihn.
+            Um meine Reise zu beginnen, auf der ich all die großartigen Rezepte teilen möchte, die ich regelmäßig mache, will ich mit dieser ganz einfachen Art starten, Matcha zuzubereiten.
+            Kein Latte, kein Zucker, nur das Teepulver an sich. Man sagt, es sei unglaublich gesund - aber ehrlich gesagt ist mir das ziemlich egal.
+            Für mich zählt der Geschmack und das kleine Ritual am Morgen, um in den Tag zu starten - und genau dabei möchte ich dich mitnehmen.",
+    "food_matchaTutorial_p1" => "Für den Anfang brauchst du nur drei Dinge: Eine Tasse mit breitem Boden, einen Schneebesen (am besten ein Matcha-Besen) und Matcha-Pulver. 
+            Ich würde empfehlen, eine Feinwaage zum Abwiegen der Zutaten und einen Wasserkocher mit Temperaturanzeige zu verwenden - damit wird das Ganze gleichmäßiger. 
+            Aber nötig sind sie nicht. Der erste und wichtigste Schritt ist, den Matcha-Besen vorzuwärmen und einzuweichen. Dafür einfach in die Tasse stellen, mit 70°C heißem Wasser auffüllen 
+            und zwei Minuten stehen lassen. Das ist wichtig, damit das Bambus weich wird - sonst kann es passieren, dass sich Splitter lösen. Danach das Wasser wegschütten, 
+            den Besen beiseitelegen und 1,5-2g Matcha-Pulver in die Tasse wiegen. Bei so kleinen Mengen geht auch ein Teelöffel, aber mit der Waage findest du schneller heraus, 
+            welche Menge dir am besten schmeckt.",
+    "food_matchaTutorial_p2" => "Das zweitwichtigste ist, die Klümpchen im Pulver in einer kleinen Menge Wasser zu lösen, damit der Tee später schön glatt wird. 
+            Genau hier ist ein Matcha-Besen besonders wichtig - ein normaler Schneebesen ist unten zu rund und zu grob, um das Pulver wirklich fein zu verquirlen.",
+    "food_matchaTutorial_p3" => "Früher hatte ich immer das Problem, dass der Matcha klumpig war oder sich viel Pulver am Boden abgesetzt hat. 
+            Wenn du aber die richtige Menge nimmst und gut verquirlst, passiert das nicht. Also gib erst ein bisschen 70°C heißes Wasser zum Pulver und verrühre es,
+            bis sich alles glatt anfühlt und keine Klümpchen mehr zu sehen sind - das geht am besten, wenn die Masse noch richtig dick ist.",
+    "food_matchaTutorial_p4" => "Erst danach solltest du das restliche Wasser dazugießen und nochmal richtig aufschäumen. Für die Menge an Matcha in einer normalen Tasse nimm etwa 80ml (80g) 
+            70°C heißes Wasser und verquirle alles, bis sich ein schöner Schaum bildet. Der Trick beim Matcha-Besen (danke an Sensei Matcha Samurai für die Erklärung) ist, 
+            nicht in kreisenden Bewegungen zu rühren, sondern ganz locker und schnell vor und zurück - also in einer geraden Linie, ohne Kraftaufwand. 
+            Wenn sich der Schaum gebildet hat, kannst du zum Schluss noch einmal langsam im Kreis rühren, damit sich der Schaum gleichmäßig über die Tasse verteilt - und das war's.",
+    "food_matchaTutorial_p5" => "Ich weiß, das Ganze klang jetzt ziemlich ausführlich - aber wenn du es einmal ausprobierst und weißt, worauf es ankommt, geht es super schnell 
+            und klappt jedes Mal. Wenn du die richtige Wassertemperatur nimmst und es ordentlich machst, wird der Geschmack richtig gut (wenn du diesen „grasigen“ Geschmack magst). 
+            Selbst mit sehr günstigem Matcha (ich nehme einen aus China, 5€ für 80g) schmeckt er nicht bitter - das wäre ein Zeichen dafür, dass dein Wasser zu heiß war. 
+            Eine letzte wichtige Sache ist die Pflege des Matcha-Besens: Einfach nach der Nutzung unter fließendem Wasser abspülen und auf einem passenden Halter trocknen lassen. 
+            So bleibt der Besen schön offen - sonst verformt er sich schnell oder geht ein. Ich kann dir also nur empfehlen, dir so einen Halter zuzulegen, 
+            damit du den Besen nicht wie ein Wegwerfprodukt behandeln musst."
+
+
 ];
