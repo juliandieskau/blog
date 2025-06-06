@@ -23,7 +23,10 @@ $lang = [
 
     // About page
     "about_heading" => "Über mich",
-    "about_text" => "Hey, Ich bin Julian und Ich studiere aktuell Angewandte Informatik.",
+    "about_text" => "Hey, ich bin Julian und ich studiere aktuell Angewandte Informatik. In meiner Freizeit programmiere ich Projekte wie dieses,
+                Koche und Backe, spiele Volleyball und Games wie Counter-Strike, lese Bücher und gehe Verreisen. In diesem Blog möchte ich Euch einen Einblick geben
+                in diese geben und hoffe dass Ihr etwas findet, dass Ihr für euch mitnehmen könnt. Wenn ihr mehr über meine Projekte wissen wollt, findet ihr diese
+                in meinem unten verlinkten GitHub oder schickt mir eine Email. Mehr von meiner letzten Japanreise oder häufige Posts über meine Experimente in der Küche ist auf meinem Instagram zu finden.",
 
     // Projects page
     "projects_heading" => "Projekte",

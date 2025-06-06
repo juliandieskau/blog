@@ -23,7 +23,10 @@ $lang = [
 
     // About page
     "about_heading" => "About Me",
-    "about_text" => "Hey, I'm Julian and I'm currently studying applied computer science.",
+    "about_text" => "Hey, I'm Julian and I'm currently studying Applied Computer Science. In my free time, I enjoy working on projects like this one, cooking and baking, playing volleyball and games like Counter-Strike, reading books, and traveling.
+            This blog is my way of sharing some of those interests with you, and I hope you'll find something here that inspires or interests you.
+            If you're curious about my coding projects, you can check them out on my GitHub (linked below) or just send me an email.
+            You'll also find more from my recent trip to Japan and regular updates from my kitchen experiments on my Instagram.",
 
     // Projects page
     "projects_heading" => "Projects",

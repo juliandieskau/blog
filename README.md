@@ -63,18 +63,18 @@ exit
 ## Requirements
 - [] Add Content:
   - [x] Add categories to header (remove Contact)
-  - [] Function that provides way to easily add a text, image and image caption in a standardized way to a blog post
+  - [x] Function that provides way to easily add a text, image and image caption in a standardized way to a blog post
   - [] Add Blog posts:
     - [x] Projects:
       - [x] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
     - [2] Travel:
       - [2] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
-    - [] Food:
-      - [] Matcha Anleitung
-    - [] About page: Japan side profile and text what i do
-    - [] Home page: Short description of me (link to profile)
+    - [1] Food:
+      - [x] Matcha Anleitung
+  - [x] About page: Short description of me, Japan side profile and text what i do
+  - [] Home page: Something interesting? (link to profile)
   - [] Add category-pages that list blog posts in their category (and preview?)
-- [] Database that stores comments
+- [x] Database that stores comments
   - [x] Create and connect to database
   - [x] Create a table for comments every time you enter a blog page that needs it and doesn't have its own table yet
   - [x] Form section in php-File (blog footer that includes) that can be included under Blog Posts for users to 
@@ -89,7 +89,7 @@ exit
     - [x] Add texts to language files
     - [x] Redirect to page at the correct scroll point
   - [x] Style comments section to look good
-- [] Footer: Display Icons with links to socials / github
+- [x] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
 - [] Website erstes mal Laden steht Sprache auf Deutsch aber website auf enlgisch geladen

@@ -10,6 +10,8 @@
     <title><?= isset($page_title) ? $page_title . ' - ' . $lang['title'] : $lang['title'] ?></title>
     <!-- Include CSS Rules and make browser reload file, if it changed (add last changed time as version to filename) -->
     <link rel="stylesheet" href="/assets/styles.css?v=<?= filemtime(RPATH . '/assets/styles.css') ?>">
+    <!-- Font for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Save the scroll position before navigation or form submission -->
     <script src="/includes/comments/saveScroll.js"></script>
 
