@@ -1,11 +1,11 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+  session_start();
 }
 
 // Define root path of website as variable (var/www/html/)
 if (!defined('RPATH')) {
-    define('RPATH', $_SERVER['DOCUMENT_ROOT']);
+  define('RPATH', $_SERVER['DOCUMENT_ROOT']);
 }
 
 // Determine selected language from user via GET
@@ -24,7 +24,7 @@ if (isset($_GET['lang'])) {
 
   // Add parameters to 
   if (!empty($params)) {
-      $redirect_url .= '?' . http_build_query($params);
+    $redirect_url .= '?' . http_build_query($params);
   }
 
   header("Location: $redirect_url");
@@ -33,11 +33,7 @@ if (isset($_GET['lang'])) {
 
 // If language is already in cookie
 elseif (isset($_COOKIE['lang'])) {
-    $lang_code = $_COOKIE['lang'];
-} 
-// Fallback: Set language to English
-else {
-    $lang_code = 'en';
+  $lang_code = $_COOKIE['lang'];
 }
 
 // Load translation file (if not found, use English)

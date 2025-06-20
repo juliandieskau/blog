@@ -54,6 +54,10 @@ $lang = [
     "username_save" => "Speichern",
     "username_alert" => "Benutzername muss 1-30 Zeichen lang sein.",
 
+    // CODE VIEWER
+    "code_more" => "Mehr anzeigen",
+    "code_less" => "Weniger anzeigen",
+
     // PROJECTS
     // Cafemenu
     "cafemenu_heading" => "Cafe-Menü",

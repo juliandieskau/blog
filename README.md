@@ -64,7 +64,7 @@ exit
 - [] Add Content:
   - [x] Add categories to header (remove Contact)
   - [x] Function that provides way to easily add a text, image and image caption in a standardized way to a blog post
-  - [] Add Blog posts:
+  - [x] Add Blog posts:
     - [x] Projects:
       - [x] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
     - [2] Travel:
@@ -73,7 +73,7 @@ exit
       - [x] Matcha Anleitung
   - [x] About page: Short description of me, Japan side profile and text what i do
   - [] Home page: Something interesting? (link to profile)
-  - [] Add category-pages that list blog posts in their category (and preview?)
+  - [x] Add category-pages that list blog posts in their category (and preview?)
 - [x] Database that stores comments
   - [x] Create and connect to database
   - [x] Create a table for comments every time you enter a blog page that needs it and doesn't have its own table yet
@@ -92,9 +92,8 @@ exit
 - [x] Footer: Display Icons with links to socials / github
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
-- [] Website erstes mal Laden steht Sprache auf Deutsch aber website auf enlgisch geladen
 - [] Init File for loading a few SQL rows into the tables each to give a usable initial state / save current state
-- [] Code Viewer Höhe begrenzen und scrollable machen
+- [x] Code Viewer Höhe begrenzen und scrollable machen
 ## 
 - [] Finish Design/Layout of website:
   - [] Header untereinander und einklappen mit Hamburger Menu wenn screen nicht breit genug
@@ -103,6 +102,3 @@ exit
 - [] Search bar
 - [] Icon for Title
 - [] Allow Cookies prompt
-- [] Disable liking own comments
-- [] Blog: Rezepte mit Bildern, die ich recently gemacht habe
-- [] einklappen von iframe/code

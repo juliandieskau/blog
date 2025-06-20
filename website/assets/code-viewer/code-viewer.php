@@ -31,6 +31,11 @@ if (!isset($base_path) || !isset($source_files) || !is_array($source_files)) {
 <!-- Include styles for the tab switcher -->
 <link href="/assets/code-viewer/tab-switcher.css" rel="stylesheet" />
 
+<script>
+  const LABEL_SHOW_MORE = <?= json_encode($lang['code_more']) ?>;
+  const LABEL_SHOW_LESS = <?= json_encode($lang['code_less']) ?>;
+</script>
+
 <!-- HTML to display Tabs -->
 <div id="code-viewer" class="code-tabs">
     <!-- Add buttons for each tab to switch to it -->
@@ -44,17 +49,18 @@ if (!isset($base_path) || !isset($source_files) || !is_array($source_files)) {
     <!-- Display every source file inside their tab -->
     <!-- pre, code: Wrapper for Prism.js to style the code, DO NOT INDENT THAT LINE!-->
     <!-- Display file contents by escaping with htmlspecialchars() to display file contents safely -->
-<?php foreach ($source_files as $filename => $code_lang): ?>
-    <?php
-    $filepath = rtrim($base_path, '/') . '/' . $filename;
-    $code = file_exists($filepath)
+    <?php foreach ($source_files as $filename => $code_lang): ?>
+        <?php
+        $filepath = rtrim($base_path, '/') . '/' . $filename;
+        $code = file_exists($filepath)
         ? file_get_contents($filepath)
         : "// File not found: $filename";
-    ?>
-    <div class="tab-content" id="content-<?= md5($filename) ?>">
+        ?>
+        <div class="tab-content" id="content-<?= md5($filename) ?>">
 <pre><code class="language-<?= htmlspecialchars($code_lang) ?>"><?= htmlentities($code) ?></code></pre>
-    </div>
-<?php endforeach; ?>
+        </div>
+    <?php endforeach; ?>
+    <button class="toggle-expand-btn" aria-expanded="false"><?= htmlspecialchars($lang['code_more']) ?></button>
 </div>
 
 <!-- Include script for Tab Switching -->

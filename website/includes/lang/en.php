@@ -52,7 +52,11 @@ $lang = [
     "username_placeholder" => "Max. 30 characters",
     "username_cancel" => "Cancel",
     "username_save" => "Save",
-    "username_alert" => "Username must be 1–30 characters long.",
+    "username_alert" => "Username must be 1-30 characters long.",
+
+    // CODE VIEWER
+    "code_more" => "Show more",
+    "code_less" => "Show less",
 
     // PROJECTS
     // Cafemenu
