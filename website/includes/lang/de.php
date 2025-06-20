@@ -38,7 +38,7 @@ $lang = [
     
     // Food page
     "food_heading" => "Essen",
-    "food_text" => "Hier findest du Rezepte und andere Köstlichkeiten.",
+    "food_text" => "Hier findest du meine Lieblings-Rezepte und weitere Essens-Abenteuer.",
 
     // COMMENTS
     "comments_amount" => "Kommentar",

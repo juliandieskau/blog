@@ -13,7 +13,7 @@
 <h2 id="content_heading"><?= $lang['catphotoapp_heading'] ?></h2>
 <p id="content_description"><?= $lang['catphotoapp_text'] ?></p>
 
-<!-- Iframe for the "camper cafe menu" -->
+<!-- Iframe for the "cat photo app" -->
 <div id="project_iframe" class="responsive-iframe-container">
   <iframe src="index.html" class="auto-resize"></iframe>
 </div>

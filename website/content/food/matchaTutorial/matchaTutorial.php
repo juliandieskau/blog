@@ -13,7 +13,7 @@
 
 <!-- This is inside the <main>-tag, use lang files to store text and include like below: -->
 <!-- Assign ids to most elements, so they can be linked to -->
-<h2 id="content_heading"><?= $lang['food_matchaTutorial_heading'] ?></h2>
+<h2 class="preview-start" id="content_heading"><?= $lang['food_matchaTutorial_heading'] ?></h2>
 <div class="media-box media-text"><p><?= $lang['food_matchaTutorial_preface'] ?></p></div>
 
 <!-- Parent element where all media-boxes will be inserted into -->

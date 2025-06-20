@@ -13,7 +13,7 @@
 <h2 id="content_heading"><?= $lang['rothkopainting_heading'] ?></h2>
 <p id="content_description"><?= $lang['rothkopainting_text'] ?></p>
 
-<!-- Iframe for the "camper cafe menu" -->
+<!-- Iframe for the "rothko painting", not finished yet -->
 <div id="project_iframe" class="responsive-iframe-container">
   <iframe src="index.html" class="auto-resize"></iframe>
 </div>

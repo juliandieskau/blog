@@ -93,17 +93,16 @@ exit
 - [] DOKUMENTATION
 - [] 22.06. Abgabe allerspätestens
 - [] Website erstes mal Laden steht Sprache auf Deutsch aber website auf enlgisch geladen
-- [] Init File for loading a few SQL rows into the tables each to give a usable initial state
+- [] Init File for loading a few SQL rows into the tables each to give a usable initial state / save current state
 - [] Code Viewer Höhe begrenzen und scrollable machen
 ## 
 - [] Finish Design/Layout of website:
   - [] Header untereinander und einklappen mit Hamburger Menu wenn screen nicht breit genug
-- [] Display localhost/ as localhost/index.php
-- [] Sub menu below header, that opens on hovering over categories with sub pages
 - [] Database that counts amount of visitors
-- [] Make sure no XSS/SQL-Attacks are possible in Forms
+- [x] Make sure no XSS/SQL-Attacks are possible in Forms
 - [] Search bar
 - [] Icon for Title
 - [] Allow Cookies prompt
 - [] Disable liking own comments
 - [] Blog: Rezepte mit Bildern, die ich recently gemacht habe
+- [] einklappen von iframe/code

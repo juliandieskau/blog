@@ -13,7 +13,7 @@
 <h2 id="content_heading"><?= $lang['registrationform_heading'] ?></h2>
 <p id="content_description"><?= $lang['registrationform_text'] ?></p>
 
-<!-- Iframe for the "camper cafe menu" -->
+<!-- Iframe for the "registration form" -->
 <div id="project_iframe" class="responsive-iframe-container">
   <iframe src="index.html" class="auto-resize"></iframe>
 </div>

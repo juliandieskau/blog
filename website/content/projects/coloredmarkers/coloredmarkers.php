@@ -13,7 +13,7 @@
 <h2 id="content_heading"><?= $lang['coloredmarkers_heading'] ?></h2>
 <p id="content_description"><?= $lang['coloredmarkers_text'] ?></p>
 
-<!-- Iframe for the "camper cafe menu" -->
+<!-- Iframe for the "colored markers" -->
 <div id="project_iframe" class="responsive-iframe-container">
   <iframe src="index.html" class="auto-resize"></iframe>
 </div>
