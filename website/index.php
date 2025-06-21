@@ -1,15 +1,21 @@
-<?php include('includes/config.php'); ?>
-<?php $page_title = $lang['home_heading']; include('includes/head.php'); ?>
-<!-- Additional head-elements go here -->
-<?php include('includes/header.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/assets/landing.css">
+</head>
+<body>
+  <!-- Canvas layers for animations -->
 
-<h2><?= $lang['home_heading'] ?></h2>
-<p><?= $lang['home_text'] ?></p>
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br>
-<p>unten</p>
+  <canvas id="landing-canvas"></canvas>
+  <canvas id="noise-layer"></canvas>
+  <canvas id="main-layer"></canvas>
 
-<?php include('includes/footer.php'); ?>
+  <!-- Text on the page -->
+  <div id="welcome-text">Welcome</div>
+  <div id="click-text">Click to Enter</div>
+  <script src="/assets/landing.js"></script>
+</body>
+</html>

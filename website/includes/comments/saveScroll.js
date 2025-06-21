@@ -2,6 +2,7 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     const key = "focusedElement_" + window.location.pathname;
+    const timestampKey = key + "_timestamp";
     let allowScrollSave = false;
 
     // Enable scroll saving after delay to avoid overwriting during load
@@ -9,22 +10,48 @@
       allowScrollSave = true;
     }, 1000); // Wait 1s after load
 
-    // IntersectionObserver to track the most visible element
     let currentFocusedId = null;
-    const observer = new IntersectionObserver((entries) => {
+
+    // Save ID and timestamp to localStorage
+    function saveScrollId(id) {
+      // Exclude the username-form elements from being saved, because they will only be shown once
+      if (id && !id.toLowerCase().includes("username")) {
+        localStorage.setItem(key, id);
+        localStorage.setItem(timestampKey, Date.now());
+      }
+    }
+
+    // IntersectionObserver to track the topmost visible element
+    const observer = new IntersectionObserver((entries) => { 
+      // Don't save if not scrolled down or not allowed to
+      if (!allowScrollSave || window.scrollY <= 10) return;
+
+      let topElement = null;
+      let minTop = Infinity;
+
+      // Find the topmost visible element
       entries.forEach(entry => {
-        if (entry.isIntersecting && allowScrollSave) {
-          const id = entry.target.id;
-          // exclude the hidden username field from being saved
-          if (id && !id.toLowerCase().includes("username")) {
-            currentFocusedId = id;
-            localStorage.setItem(key, currentFocusedId);
+        if (entry.isIntersecting) {
+          const rectTop = entry.boundingClientRect.top;
+          if (rectTop >= 0 && rectTop < minTop) {
+            minTop = rectTop;
+            topElement = entry.target;
           }
         }
       });
+
+      // Save the topmost element
+      if (topElement) {
+        const id = topElement.id;
+        if (id && !id.toLowerCase().includes("username")) {
+          currentFocusedId = id;
+          saveScrollId(id);
+        }
+      }
     }, {
+      // Trigger on any element that is visible
       root: null,
-      threshold: 0.6, // At least 60% of the element must be visible
+      threshold: 0, 
     });
 
     document.querySelectorAll("[id]").forEach(el => observer.observe(el));
@@ -34,7 +61,7 @@
       link.addEventListener("click", () => {
         const id = link.id || link.closest("[id]")?.id || currentFocusedId;
         if (id) {
-          localStorage.setItem(key, id);
+          saveScrollId(id);
         }
       });
     });
@@ -59,7 +86,7 @@
       });
     });
 
-    // Block browser's automatic restoring of scroll
+    // // Prevent browser's native scroll restoration
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
     }
@@ -69,21 +96,32 @@
       history.replaceState(null, "", window.location.pathname);
     });
 
-    // Restore scroll to focused element, cleanup and update URL
+    // Restore scroll to focused element, cleanup and update URL if timestamp is recent
     const savedId = localStorage.getItem(key);
-    // Only scroll to valid URLs
-    if (savedId && !savedId.toLowerCase().includes("username")) {
+    const savedTime = parseInt(localStorage.getItem(timestampKey), 10);
+    const duration = 15 * 60 * 1000; // 15 minutes
+
+    // Scroll to valid URLs, when the timestamp is more recent than the relevant duration
+    if (savedId && !savedId.toLowerCase().includes("username") 
+        && savedTime && Date.now() - savedTime < duration) {
+      // Select stored ID from storage
       const target = document.getElementById(savedId);
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "auto", block: "start" });
           history.replaceState(null, "", "#" + savedId);
         }, 50);
-      } else {
-        localStorage.removeItem(key); // Clean up stale id
+      } 
+      // Clean up stale IDs
+      else {
+        localStorage.removeItem(key);
+        localStorage.removeItem(timestampKey);
       }
-    } else {
-      localStorage.removeItem(key); // Remove invalid id
+    }
+    // Remove invalid IDs (only focused element related IDs)
+    else {
+      localStorage.removeItem(key); 
+      localStorage.removeItem(timestampKey);
     }
   });
 })();

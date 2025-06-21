@@ -5,9 +5,6 @@
 <?php $page_title = $lang['<page_title>']; include(RPATH . 'includes/head.php'); ?>
 
 <!-- Additional <head>-elements go here -->
-<!-- For project pages (defer loads after HTML is parsed): -->
-<script src="<?= RPATH ?>/assets/resize-iframe.js" defer></script>
-
 <?php include(RPATH . 'includes/header.php'); ?>
 
 <!-- This is inside the <main>-tag, use lang files to store text and include like below: -->

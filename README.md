@@ -61,7 +61,7 @@ exit
 ```
 
 ## Requirements
-- [] Add Content:
+- [x] Add Content:
   - [x] Add categories to header (remove Contact)
   - [x] Function that provides way to easily add a text, image and image caption in a standardized way to a blog post
   - [x] Add Blog posts:
@@ -72,7 +72,7 @@ exit
     - [1] Food:
       - [x] Matcha Anleitung
   - [x] About page: Short description of me, Japan side profile and text what i do
-  - [] Home page: Something interesting? (link to profile)
+  - [x] Home page: Something interesting? (link to profile)
   - [x] Add category-pages that list blog posts in their category (and preview?)
 - [x] Database that stores comments
   - [x] Create and connect to database
@@ -94,7 +94,8 @@ exit
 - [] 22.06. Abgabe allerspätestens
 - [] Init File for loading a few SQL rows into the tables each to give a usable initial state / save current state
 - [x] Code Viewer Höhe begrenzen und scrollable machen
-## 
+- [x] Saving IDs: Topmost element, not focused middle one
+## Optional Requirements:
 - [] Finish Design/Layout of website:
   - [] Header untereinander und einklappen mit Hamburger Menu wenn screen nicht breit genug
 - [] Database that counts amount of visitors
@@ -102,3 +103,5 @@ exit
 - [] Search bar
 - [] Icon for Title
 - [] Allow Cookies prompt
+- [] Enable / Disable saving IDs/Classes
+- [] Fix zoom for index (replace with something else)
