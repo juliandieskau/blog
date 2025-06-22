@@ -1,1 +1,0 @@
--- Currently unused: File to initialize the database when creating the db-container for the first time

@@ -4,7 +4,7 @@ session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/comments/connection.php';
 
 // Insert new comment into table on Form submit
-// TODO: Handle post-requests for the SQL database
+// Handle post-requests for the SQL database
 // Use flash_messages to show output instead of echo to prevent header() errors
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // If 'action' exists assign it to the variable, otherwise an empty string

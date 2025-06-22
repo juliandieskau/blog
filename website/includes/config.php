@@ -9,6 +9,7 @@ if (!defined('RPATH')) {
 }
 
 // Determine selected language from user via GET
+$lang_code = 'en';
 if (isset($_GET['lang'])) {
   $lang_code = $_GET['lang'];
   // Save language for a year

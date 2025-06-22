@@ -1,5 +1,6 @@
 # Blog
-Personal blog ("Gruppe" 7)
+Personal blog
+Remote repository: https://github.com/juliandieskau/blog
 
 ## Set up website
 ### Start webserver
@@ -59,6 +60,16 @@ exit container interactive terminal
 ```bash
 exit
 ```
+### Dump database contents into file to transfer it to another system
+Create a dump file inside the docker container
+```cmd
+docker exec blog_mysql sh -c "mysqldump --no-tablespaces -u julian -pjulianpassword blogdb > /tmp/dump.sql"
+```
+Copy dump file from the container to the current directory
+```cmd
+docker cp blog_mysql:/tmp/dump.sql .
+```
+When starting the docker compose for the first time (when the database is still empty and gets started) the dump.sql file will get automatically run once to initialize the database. On further starts it is ignored.
 
 ## Requirements
 - [x] Add Content:
@@ -67,9 +78,9 @@ exit
   - [x] Add Blog posts:
     - [x] Projects:
       - [x] iframes for finished devprojects, with source code shown below (with tabs for multiple files?)
-    - [2] Travel:
-      - [2] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
-    - [1] Food:
+    - [x] Travel:
+      - [x] Copy instagram posts (and translate) in parts into lang files and with images inserted in between
+    - [x] Food:
       - [x] Matcha Anleitung
   - [x] About page: Short description of me, Japan side profile and text what i do
   - [x] Home page: Something interesting? (link to profile)
@@ -90,9 +101,8 @@ exit
     - [x] Redirect to page at the correct scroll point
   - [x] Style comments section to look good
 - [x] Footer: Display Icons with links to socials / github
-- [] DOKUMENTATION
-- [] 22.06. Abgabe allerspätestens
-- [] Init File for loading a few SQL rows into the tables each to give a usable initial state / save current state
+- [x] DOKUMENTATION
+- [x] 22.06. Abgabe allerspätestens 
 - [x] Code Viewer Höhe begrenzen und scrollable machen
 - [x] Saving IDs: Topmost element, not focused middle one
 ## Optional Requirements:
@@ -105,3 +115,7 @@ exit
 - [] Allow Cookies prompt
 - [] Enable / Disable saving IDs/Classes
 - [] Fix zoom for index (replace with something else)
+- [x] Datenbank abspeichern und mit abgeben
+## Future Blog Posts:
+- [] Japanese Rice Tutorial
+- [] Miso Eggplants Recipe
